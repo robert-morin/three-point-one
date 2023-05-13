@@ -13,3 +13,36 @@ code
     font-size: 1.25em;
     text-decoration: underline dashed #00a857;
 }
+
+nav, section
+{
+    position: relative;
+}
+
+code .tooltip
+{
+    visibility: hidden;
+    width: min(40em, 85%);
+    left: max(0em, 50% - 20em);
+    margin-top: 1.2em;
+
+    background-color: white;
+    color: black;
+    padding: 1em;
+    border: 2px solid black;
+    box-shadow: 1em 0.8em rgba(50, 50, 50, 0.4);
+
+    position: absolute;
+    z-index: 2;
+}
+
+code:hover .tooltip
+{
+    visibility: visible;
+}
+
+.tooltip b
+{
+    display: block;
+    margin-bottom: 0.5em;
+}
