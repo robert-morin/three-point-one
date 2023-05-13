@@ -1,0 +1,18 @@
+main
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 5em;
+}
+
+.nav-link
+{
+    text-align: center;
+}
+
+.nav-link figure > *
+{
+    width: 8em;
+    height: auto;
+}
