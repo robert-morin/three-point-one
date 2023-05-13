@@ -26,6 +26,7 @@ body
     left: -10px;
     width: calc(100% - 100px);
     height: calc(100% - 100px);
+    pointer-events: none;
 
     border: 60px solid;
     border-image: url("assets/menubox-border.svg") 61;
@@ -53,6 +54,11 @@ body
     border-width: 60px;
     border-style: solid;
     border-image: url("assets/menubox-border-top.svg") 61;
+}
+
+.fullscreen main
+{
+    padding-top: 10em;
 }
 
 .titlebar
@@ -113,42 +119,14 @@ nav > *
     text-align: center;
     padding: 5px;
 
-    background-color: #c0c0c0;
-    border-style: outset;
-    border-color: white #808080 #808080 white;
-    border-width: 3px;
-    position: relative;
-    z-index: auto;
+    border: 6px solid;
+    border-image: url("assets/button-border.svg") 20 fill;
 }
 
 .button:active, button:active, input[type = submit]:active
 {
-    padding: 8px 5px 2px 8px;
-    border-style: outset solid solid outset;
-    border-color: #808080 #c0c0c0 #c0c0c0 #808080;
-}
-
-.button::after, button::after
-{
-    content: '';
-    display: block;
-    position: absolute;
-    top: -6px;
-    left: -6px;
-    width: calc(100% + 12px);
-    height: calc(100% + 12px);
-    border-radius: 5px;
-    background: black;
-    z-index: -1;
-}
-
-.button-shadow
-{
-    content: '';
-    display: block;
-    border-radius: 5px;
-    background: black;
-    padding: 3px;
+    padding: 8px 2px 2px 8px;
+    border-image: url("assets/button-border-active.svg") 20 fill;
 }
 
 input[type=text], input[type=email], input[type=number], select
@@ -266,4 +244,14 @@ input[type=checkbox]
 input[type=checkbox]:checked + .checkbox-label::before
 {
     background-image: url("assets/checkboxx.svg");
+}
+
+
+
+
+/* move this */
+
+section
+{
+    scroll-margin-top: 5em;
 }

@@ -37,3 +37,4 @@ X	titlebar buttons
 	use variables?
 	button shadow does not work. use border svg?
 	/* css comments */
+	svg duplication?
