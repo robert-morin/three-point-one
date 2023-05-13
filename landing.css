@@ -27,3 +27,13 @@ form > input[type = email]
 {
     flex-grow: 1;
 }
+
+p
+{
+    text-align: justify;
+}
+
+.fullscreen > main
+{
+    margin: 3em;
+}
