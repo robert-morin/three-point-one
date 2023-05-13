@@ -1,0 +1,208 @@
+Moving Around in Help
+
+You can use the "Help button bar" to move around in Help. You can
+browse through topics, and go back to topics you've viewed
+previously. You can search for specific information or display
+Help Contents. You can also choose a "jump" to go to a new Help
+topic.
+
+For more information about moving around in Help, choose one
+of the following tasks:
+
+- Backtracking Through Help Topics
+- Browsing Though Help Topics
+- Choosing a Jump
+- Displaying Help Contents
+- Returning to a Help Topic You Have Viewed
+- Scrolling Through a Help Topic
+- Searching for a Help Topic
+
+----------------
+
+Backtracking Through Help Topics
+
+Use the "Back button" to go back through the Help "topics" you have
+viewed, in the order in which you viewed them. If there is no
+previous topic to view, the Back button is dimmed. The record of
+topics you have viewed is removed each time you quit Help.
+
+To backtrack through Help topics
+
+> Choose the Back button on the "Help button bar".
+
+  Or type b.
+
+You return to the previously viewed topic. The topic appears as
+you left it, unless you resized the window before backtracking.
+
+See Also
+
+Moving Around in Help
+
+--------------------
+
+Browsing Through Help Topics
+
+If the browse buttons (<< and >>) appear in the Help window, it
+means certain Help "topics" have been grouped tagether in a
+sequence.
+
+To view the next topic in the browse sequence
+
+> Choose the ">> button" on the "Help button bar".
+
+  Or press the period (.) key.
+
+When you reach the last topic in the sequence, or if there is no
+browse sequence, the >> button is dimmed.
+
+To view the previous topic in the browse sequence
+
+> Choose the << button on the Help button bar.
+
+  Or press the comma (,) key.
+
+When you reach the first topic in the sequence, or if there is no
+browse sequence, the << button is dimmed.
+
+See Also
+
+Moving Around in Help
+
+---------------
+
+
+Choosing a Jump
+
+Help topics can include graphics and text that link to other Help
+topics or to more information about the current topic. These are
+called jumps.
+Jumps are usually identified by a color and an underline
+(unless the jump is a graphic). When you point to a jump, the
+"pointer" changes to hand shape.
+
+To choose a jump
+
+> Point to the text or graphic, and click with the mouse button.
+  Or press TAB to select the jump, and then press ENTER.
+  
+  You can press SHIFT+TAB to move backward and select a jump.
+  
+If the jump you choose is linked to another topic, that topic
+appears in the Help window. Sometimes a jump is linked to
+information that appears in a pop-up window or a secondary
+window.
+
+Note: When information is displayed in a pop-up window, the
+size of the pop-up window is proportional to the size of
+the main Help window. If you want the pop-up window to
+be larger, you need to change the size of the main Help
+window.
+
+To display all jumps in a topic
+
+> Press CTRL+TAB.
+
+To close a pop-up window
+
+> Click anywhere on the screen. or press any key.
+
+To close a secondary window
+
+> Double-click the Contro-menu box.
+
+  Or press ALT, SPACEBAR to open the Control menu, and then choose Close.
+
+See Also
+
+Moving Around in Help
+
+----------
+
+
+Displaying Help Contents
+
+Help Contents generally lists available Help "topics". If you are
+Viewing a Help topic and you want to return to Help Contents, use
+the Contents button.
+
+To display Help Contents from within Help
+
+> Choose the "Contents button" in the "Help button bar".
+    Or type c.
+    
+See Also
+Getting Help from Your Application
+Moving Around in Help.
+
+-----------
+
+
+Returning to a Help Topic You Have Viewed
+
+You can use the "History button" to see a list of the previous 40
+Help topics you have viewed. To return to a topic, choose it from
+this list.
+
+To use the History button to return to a topic
+1. In the "Help button bar", choose the History button.
+  Or type t.
+2. Double-click the topic you want to return to (or select it and press ENTER).
+
+  If necessary. use the "scroll bar" to see more topics.
+  
+  The History window stays open until you close it or quit Help.
+  
+To close the History window
+> Double-click the "Control-menu box".
+  Or press ALT+F4.
+  
+See Also
+Moving Around in Hel
+
+-------------------
+
+
+Scrolling Through a Help Topic
+
+If the information in a Help topic doesn't fit in the window. use the "scroll bar".
+
+To scroll through a Help topic
+
+> Click one of the scroll arrows to scroll one line at a time, or drag the scroll box to scroll quickly through a topic.
+
+  Or use the arrow keys to scroll up or down.
+
+To scroll up or down, one window at a time
+
+> Click above or below the scroll box in the scroll bar.
+  Or use the PAGE UP and PAGE DOWN keys.
+
+See Also
+
+Moving Around in Help
+
+------------
+
+
+Searching for a Help Topic
+
+You can find information quickly by using the "Search button" in the Help window. The Search button opens the Search dialog box, where you select a word that you want to search for. All Help topics associated with that word are listed, and you can select one to view. For example, to find out how to save a file, you could select "save" from the list. Topics that have the word "save" associated with them would then be listed in the Search dialog box.
+
+To search for Help information
+
+1 In the "Help button bar", choose the Search button.
+
+  Or type s.
+
+2. Select the word or phrase you want to search for. When you start typing, the words that most closely match the text you type are displayed.
+
+3. Choose the Show Topics button.
+
+4. Select the topic you want to view. If necessary, use the scroll bar to see more topics.
+
+5. Choose the Go To button.
+
+See Also
+
+Moving Around in Help
