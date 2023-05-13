@@ -2,20 +2,20 @@
 	baseProfile="full"
 	viewBox="0 0 60 40"
 	xmlns="http://www.w3.org/2000/svg">
+    <text x="5" y="30" font-size="30">&#127839;</text>
 
-    <text x="0" y="35" font-size="40">&#127839;</text>
-	<text x="37" y="30" font-size="16">
+	<text x="37" y="25" font-size="12">
         <animateTransform id="anim1" attributeName="transform"
                           attributeType="XML"
                           type="rotate"
-                          from="0 45 30"
-                          to="45 45 30"
+                          from="0 45 25"
+                          to="45 45 25"
                           begin="0s;anim2.end"
                           dur="1s"
                           />
         <animateTransform  id="anim2" attributeName="transform" type="rotate"
-                            from="45 45 30"
-                            to="0 45 30"
+                            from="45 45 25"
+                            to="0 45 25"
                             begin="anim1.end"
                             dur="1s"
                             />

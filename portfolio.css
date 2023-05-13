@@ -43,7 +43,7 @@ body > nav + * > section
     text-align: justify;
 }
 
-#welcome-section > *:nth-child(2)
+#welcome-section > #selfie
 {
     position: absolute;
     top: 4em;
@@ -53,10 +53,10 @@ body > nav + * > section
     max-height: 80vh;
 }
 
-#welcome-section > *:nth-child(3)
+#welcome-section > #about
 {
     position: absolute;
-    top: calc(50vh - 7.5em);
+    top: calc(40vh - 7.5em);
     left: 5%;
     width: 25em;
     height: 15em;
@@ -64,24 +64,65 @@ body > nav + * > section
     z-index: 2;
 }
 
-#welcome-section > *:nth-child(4)
+#welcome-section > #useful
 {
     position: absolute;
-    bottom: 10em;
+    bottom: 14em;
     left: calc(53% - 12.5em);
     width: 25em;
     height: 8em;
 }
 
-#welcome-section > *:nth-child(5)
+#welcome-section > #why
 {
     position: absolute;
-    bottom: 4.5em;
+    bottom: 8.5em;
     left: calc(50% - 12.5em);
     width: 25em;
     height: 8em;
 }
 
+#welcome-section > #lorem
+{
+    z-index: -1;
+    position: absolute;
+    top: 38%;
+    right: calc(50% - 45vw);
+    width: 40em;
+}
+
+#welcome-section > #prompt
+{
+    z-index: -1;
+    position: absolute;
+    top: 5%;
+    left: calc(50% - 45vw);
+    width: 40em;
+    min-height: 45%;
+
+    background-color: black;
+    color: white;
+
+    align-content: flex-start;
+}
+
+#prompt .branding
+{
+    display: flex;
+    gap: 1em;
+    width: 100%;
+}
+
+#welcome-section > #prompt ul
+{
+    border: white double;
+    padding: 1em 2em 1em 3em;
+}
+
+#welcome-section > #prompt li
+{
+    list-style-type: square;
+}
 
 #projects
 {

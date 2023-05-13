@@ -1,4 +1,4 @@
-.infobox
+.about-window
 {
     max-width: 60em;
     margin-left: auto;
@@ -11,7 +11,7 @@ table
 	margin-right: auto;
 }
 
-main > :last-child
+.about > :last-child
 {
     margin-bottom: 5em;
 }

@@ -4,6 +4,8 @@
 		<meta charset="utf-8">
 		<title>About french-tries</title>
 		<link rel="stylesheet" href="theme.css" />
+		<link rel="stylesheet" href="about.css" />
+		<link rel="stylesheet" href="about-responsive.css" />
 		<link rel="stylesheet" href="portfolio.css" />
 	</head>
 	<body>
@@ -26,74 +28,54 @@
 			</a>
 		</nav>
 		<main>
-			<section class="fullscreen" id="welcome-section">
-				<div class="sub menubox" id="selfie">
+			<section id="welcome-section" class="fullscreen">
+				<div id="main" class="infobox active about-window">
 					<header class="titlebar">
-						<img src="./assets/submenu-icon.svg" alt=" ">
-						<h2 id="title">Selfie</h2>
+						<img src="./assets/menu-icon.svg" alt="">
+						<h1 id="title">About Me</h1>
 					</header>
-					<img src="./assets/mugshot.svg" alt="Waving french fries"/>
-				</div>
-				<div class="sub infobox active" id="about">
-					<header class="titlebar">
-						<img src="./assets/submenu-icon.svg" alt=" ">
-						<h1 id="title">About</h1>
-					</header>
-					<p>
-						Hi, I'm french-tries, an aspiring developer.
-					</p>
-					<p>
-						Grab a snack and watch my progress as I relearn programming.
-					</p>
-					<p>
-						<a id="profile-link" class="button" target="_blank" href="https://github.com/french-tries/">Github</a>
-					</p>
-				</div>
-				<div class="sub menubox" id="useful">
-					<header class="titlebar">
-						<img src="./assets/submenu-icon.svg" alt=" ">
-						<h2 id="title">Useful info</h2>
-					</header>
-					<p>
-						The way to find infinite happiness is "Redacted"...
-					</p>
-				</div>
-				<div class="sub menubox" id="why">
-					<header class="titlebar">
-						<img src="./assets/submenu-icon.svg" alt=" ">
-						<h2 id="title">Why</h2>
-					</header>
-					<p>
-						Why french-tries? At the time, I was following an online course and tries was the current subject.
-						 I was hungry, then magic happened. 
-					</p>
-				</div>
-				<div class="sub menubox" id="lorem">
-					<header class="titlebar">
-						<img src="./assets/submenu-icon.svg" alt=" ">
-						<h2 id="title">Random</h2>
-					</header>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget sem ante. Donec consectetur neque ut ipsum scelerisque, a vehicula tellus ultricies. Morbi vestibulum augue et convallis mollis. Etiam nec mi euismod, pharetra quam quis, mattis sapien. Aliquam ex mauris, fermentum a egestas nec, euismod nec ex. Curabitur sapien dolor, commodo in mattis a, lobortis at ex. Fusce hendrerit, augue vel vulputate ornare, est mauris porttitor sem, consequat eleifend libero risus sit amet dui. Sed eget sem bibendum, luctus turpis vitae, feugiat nibh. Nunc aliquam porta lorem, eget ultricies urna varius sit amet. Phasellus sed nisi auctor, efficitur libero id, pretium leo.
-					</p><p>
-						Phasellus metus sapien, tristique sit amet efficitur vitae, laoreet eget ligula. Suspendisse auctor mollis ex, non congue lorem. Vestibulum vitae massa ac nulla ullamcorper tincidunt vitae quis erat. Aliquam erat volutpat. Mauris pulvinar, elit non vehicula tincidunt, mi erat molestie nibh, sit amet porttitor magna dui in metus. Vestibulum mauris eros, laoreet eu nulla in, aliquam feugiat tortor. Pellentesque felis tellus, euismod viverra egestas in, tincidunt fringilla lectus. Donec molestie nibh nibh, ut pharetra tortor euismod vitae. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque ultricies, eros ac imperdiet lacinia, ante lorem ullamcorper libero, non consectetur neque ligula sit amet tortor. Maecenas ut sagittis purus, in placerat ipsum. Aliquam tempor nunc vel mi tristique, in gravida purus iaculis. Fusce viverra sapien lacus, fringilla dapibus nunc porttitor at.
-					</p>
-				</div>
-				<div class="sub menubox dark" id="prompt">
-					<header class="titlebar">
-						<img src="./assets/submenu-icon.svg" alt=" ">
-						<h2 id="title">MS-DOS Prompt</h2>
-					</header>
-					<ul>
-						<li>Type EXIT and press ENTER to quit this MS-DOS prompt and return to Windows.</li>
-						<li>Press ALT+TAB to switch to Windows or another application.</li>
-						<li>Press ALT+ENTER to switch this MS-DOS Prompt between a window and full screen.</li>
-					</ul>
-					<div class="branding">
-						<div>Microsoft(R)</div>
-						<div>MS-DOS(R) Version 3.30 <br/>(C)Copyright Microsoft Corp 1981-1987</div>
-					</div>
-					<p>C:>_</p>
+					<main class="about">
+						<figure><div id="img-div">
+							<svg id="image" class="about-img" alt="French fries" viewBox="0 0 16 16" width="200px">
+								<text x="0" y="14">&#127839;</text>
+							</svg>
+							<figcaption id="img-caption" class="about-caption">
+								<p>French Tries - an aspiring developer</p>
+								<p>Version 3.1</p>
+								<p>Copyright &copy 2021</p>
+							</figcaption>
+							<a id="profile-link" class="button about-button" target="_blank" href="https://github.com/french-tries/">Github</a>
+						</div></figure>
+						<div id="tribute-info" class="about-info">
+							<div>
+								<p>This product is licensed to:</p>
+								<p>French Tries</p>
+								<p>Quebec, Canada</p>
+							</div>
+							<div><p>
+								Grab a snack and watch my progress as I relearn programming.
+							</p></div>
+							<div>
+								<table>
+									<thead>
+										<tr>
+											<th colspan="2">386 Enhanced Mode</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Memory:</td>
+											<td>46,505 KB Free</td>
+										</tr>
+										<tr>
+											<td>System ressources:</td>
+											<td>86% Free</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</main>
 				</div>
 			</section>
 			<section id="projects" class="menubox fullscreen active">
