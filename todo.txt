@@ -3,7 +3,7 @@ General:
 	find out if I will be sued by using the Windows logo in the tribute page...
 X	titles
 X	alt text?
-	semantic html
+X	semantic html
 X	h1 - h6
 
 About Page:
