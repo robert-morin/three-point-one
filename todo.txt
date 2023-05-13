@@ -1,6 +1,7 @@
 General:
 
 	find out if I will be sued by using the Windows logo in the tribute page...
+	titles
 
 About Page:
 
@@ -13,12 +14,12 @@ X	less px ?
 X	vertical only version to satisfy FCC
 X	remove duplication vertical only / regular
 
-Radio Shack contest:
+Contest:
 
 X	Find 1993 computer in catalog for name/specs + img (https://radioshackcatalogs.com/flipbook/1993_radioshack_catalog.html?fb3d-page=170)
-	Add text / content
-	img
-	Position stuff
+X	Add text / content
+X	img
+X	Position stuff
 
 Theme:
 
@@ -37,3 +38,4 @@ X	titlebar buttons
 X	button shadow does not work. use border svg?
 	/* css comments */
 	svg duplication?
+	use more border-box for simpler lengths?

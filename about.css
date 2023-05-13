@@ -20,6 +20,11 @@ td:not(:first-child)
     margin: 2em;
 }
 
+.about-img
+{
+    display: block;
+}
+
 .about-info > *
 {
     padding-top: 1em;

@@ -22,6 +22,7 @@ body
 	margin: 1vw;
     background-color: white;
     width: 94vw;
+    box-sizing: border-box;
 
     display: flex;
     flex-wrap: wrap;
@@ -102,7 +103,7 @@ body
     }
 }
 
-.fullscreen > header::before
+.menubox.fullscreen > header::before
 {
     content: '';
     position: absolute;
@@ -225,7 +226,6 @@ select
 {
     display: inline-block;
     height: 2em;
-    width: 150px;
     outline: none;
     color: black;
 }
@@ -289,6 +289,7 @@ input[type=checkbox]
 {
     position: relative;
     padding-left: 2em;
+    padding-bottom: 0.5em;
     display: block;
 }
 
