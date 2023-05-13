@@ -13,52 +13,67 @@ body
 .infobox, .menubox
 {
     position: relative;
-	margin: 1vw 1vw 1vw 1vw;
+	margin: 1vw;
     background-color: white;
+    width: 94vw;
 }
 
-.menubox
-{
-    box-shadow:
-        inset 0 0 0 1px black,
-        inset 0 0 0 5px #ccc,
-        inset 0 0 0 6px black,
-        inset 0 0 0 6px black;
-
-    padding: 6px;
-}
-
-.menubox::after
+.menubox::before
 {
     content: '';
-    display: block;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% ;
-    height: 100%;
-    background: url("assets/menubox-border.svg");
+    top: -10px;
+    left: -10px;
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
+
+    border: 60px solid;
+    border-image: url("assets/menubox-border.svg") 61;
 }
 
-.infobox header, .menubox header
+.fullscreen header
+{
+    position: fixed;
+    top: calc(1vw);
+    left: calc(1vw + 8px);
+    width: calc(94vw);
+
+    box-shadow: 0 -20px 0 20px #c0c0c0;
+}
+
+.fullscreen header::before
+{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
+
+    border-width: 60px;
+    border-style: solid;
+    border-image: url("assets/menubox-border-top.svg") 61;
+}
+
+.titlebar
 {
 	display: flex;
 }
 
-.infobox header > *, .menubox header > *
+.titlebar > *
 {
 	flex-grow : 1;
 	border-bottom: 2px solid black;
 }
 
-.infobox header img, .menubox header img
+.titlebar img
 {
 	flex-grow : 0;
 	height: var(--header-height);
 	border-right: 2px solid black;
 }
 
-.infobox.active header, .menubox.active header
+.infobox.active .titlebar, .menubox.active .titlebar
 {
 	background-color: #000080;
 	color: white;
@@ -66,7 +81,7 @@ body
 	margin: 0px;
 }
 
-.infobox h1, .menubox h1
+.titlebar h1
 {
 	margin: 5px 0 0 0;
 }
@@ -81,7 +96,8 @@ nav
 {
     display: flex;
     flex-wrap: wrap;
-    border-bottom: solid black 2px;
+    background-color: white;
+    border-bottom: 2px solid black;
 }
 
 nav > *

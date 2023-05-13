@@ -5,7 +5,7 @@
 		xmlns:ev="http://www.w3.org/2001/xml-events" 
 		version="1.1" 
 		baseProfile="full" 
-        width="200px"
+        width="200px" 
 		height="200px"
 		viewbox="0 0 200 200">
 
@@ -16,21 +16,18 @@
         </g>
 	</defs>
 
-    <rect width="200" height="200" stroke="#c0c0c0" stroke-width="20" fill="transparent"/>
-    <rect x="1" y="1" width="198" height="198" stroke="black" stroke-width="2" fill="transparent"/>
-    <rect x="11" y="11" width="178" height="178" stroke="black" stroke-width="2" fill="transparent"/>
+	<polyline points="5 200  5 5  195 5  195 200"
+      stroke="#c0c0c0" fill="transparent" stroke-width="10"/>
+
+	<polyline points="1 200  1 1  199 1  199 200"
+      stroke="black" fill="transparent" stroke-width="2"/>
+
+	<polyline points="11 200  11 11  189 11  189 200"
+      stroke="black" fill="transparent" stroke-width="2"/>
 
     <use xlink:href="#corner-template"/>
 	
-	<svg x="200" y="0" style="overflow: visible;">
+	<svg x="200" y="0" style="overflow: visible;"> 
 		<use xlink:href="#corner-template" transform='rotate(90)' />
 	</svg> 
-	
-	<svg x="200" y="200" style="overflow: visible;">
-		<use xlink:href="#corner-template" transform='rotate(180)' />
-	</svg>
-	
-	<svg x="0" y="200" style="overflow: visible;">
-		<use xlink:href="#corner-template" transform='rotate(270)' />
-	</svg>
-</svg>
+</svg> 

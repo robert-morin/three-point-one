@@ -35,3 +35,5 @@ X	titlebar buttons
 	dropdown option theming possible?
 	number input arrows
 	use variables?
+	button shadow does not work. use border svg?
+	/* css comments */
