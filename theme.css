@@ -93,7 +93,6 @@ body
 {
     position: fixed;
     top: calc(1vh);
-    left: calc(1vw + 8px);
     width: calc(94vw);
     z-index: 1;
 

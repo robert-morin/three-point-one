@@ -1,7 +1,7 @@
 section
 {
     scroll-margin-top: 5em;
-    padding: 2em;
+    margin: 2em;
 }
 
 iframe
@@ -36,4 +36,24 @@ p
 .fullscreen > main
 {
     margin: 3em;
+}
+
+@media screen and (max-width: 53em)
+{
+    #vid_link
+    {
+        overflow: hidden;
+        padding-top: 70%;
+        position: relative;
+    }
+
+    #vid_link iframe
+    {
+        border: 0;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
 }
