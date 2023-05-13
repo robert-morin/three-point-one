@@ -34,3 +34,4 @@ X	titlebar buttons
 	focus? check with VM
 	dropdown option theming possible?
 	number input arrows
+	use variables?

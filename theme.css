@@ -1,38 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+:root {
+    --header-height: 48px;
+  }
+
 body
 {
 	background-color: #c0c0c0;
 	font-family: 'Press Start 2P', sans-serif;
 }
 
-.infobox
+.infobox, .menubox
 {
     position: relative;
-    z-index: 10;
 	margin: 1vw 1vw 1vw 1vw;
+    background-color: white;
 }
 
-.infobox header
+.menubox
+{
+    box-shadow:
+        inset 0 0 0 1px black,
+        inset 0 0 0 5px #ccc,
+        inset 0 0 0 6px black,
+        inset 0 0 0 6px black;
+
+    padding: 6px;
+}
+
+.menubox::after
+{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% ;
+    height: 100%;
+    background: url("assets/menubox-border.svg");
+}
+
+.infobox header, .menubox header
 {
 	display: flex;
 }
 
-.infobox header > *
+.infobox header > *, .menubox header > *
 {
 	flex-grow : 1;
 	border-bottom: 2px solid black;
 }
 
-.infobox header img
+.infobox header img, .menubox header img
 {
 	flex-grow : 0;
-	height: 48px;
+	height: var(--header-height);
 	border-right: 2px solid black;
 }
 
-
-.infobox.active header
+.infobox.active header, .menubox.active header
 {
 	background-color: #000080;
 	color: white;
@@ -40,16 +66,27 @@ body
 	margin: 0px;
 }
 
-.infobox h1
+.infobox h1, .menubox h1
 {
 	margin: 5px 0 0 0;
 }
 
-.active
+.infobox.active
 {
 	border: 10px solid #000080;
 	padding: 2px;
-	background-color: white;
+}
+
+nav
+{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: solid black 2px;
+}
+
+nav > *
+{
+    padding: 0.3em 1em;
 }
 
 .button, button, input[type = submit]
