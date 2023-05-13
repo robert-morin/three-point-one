@@ -1,76 +1,13 @@
-.content
-{
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
-    grid-template-rows: auto auto;
-    grid-gap: 5px;
-
-    grid-template-areas: 
-    "img top button"
-    "img content content";
-
-    position: relative;
-    z-index: 10;
-
-}
 
 p
 {
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
-#img-div
-{
-    position: relative;
-}
-
-figure
-{
-    margin: 10px 0;
-}
-
-button
-{
-    width: 100%;
-    font-family: 'Press Start 2P', serif, sans-serif;
-    font-size: 1em;
-    padding: 5px;
-    margin-top: 10px;
-
-    background-color: #c0c0c0;
-    border-style: outset;
-    border-color: white #808080 #808080 white;
-    border-width: 3px;
-    position: relative;
-    z-index: auto;
-}
-
-button:active
-{
-    padding: 8px 5px 2px 8px;
-    border-style: outset solid solid outset;
-    border-color: #808080 #c0c0c0 #c0c0c0 #808080;
-}
-
-button::after
-{
-    content: '';
-    display: block;
-    position: absolute;
-    top: -6px;
-    left: -6px;
-    width: calc(100% + 12px);
-    height: calc(100% + 12px);
-    border-radius: 5px;
-    background: black;
-    z-index: -1;
-
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 th
 {
-    font-weight:normal;
+    font-weight: normal;
     text-align: left;
 }
 
@@ -79,32 +16,61 @@ td:not(:first-child)
     padding-left: 30px;
 }
 
-.content > *
+.about
 {
-    margin: 15px;
+    position: relative;
+    z-index: 10;
 }
 
-.content > :nth-child(1)
+.about > *
 {
-    grid-area: img;
+    margin: 1em;
 }
 
-.content > :nth-child(2)
+.about figure
 {
-    grid-area: top;
+    position: relative;
+    margin-bottom: 5em;
 }
 
-.content > :nth-child(3)
+.about-caption, .about-button
 {
-    grid-area: button;
+    margin-left: 1em;
 }
 
-.content > :nth-child(4)
+.about-img
 {
-    grid-area: content;
+    width: calc(15% - 2vw);
+    position: absolute;
+    margin-left: auto;
+	margin-right: auto;
+
+	max-width: 100%;
+	display: block;
+	height: auto;
 }
 
-#tribute-info > *:not(:last-child)
+.about-caption
+{
+    position: relative;
+    left: 15%;
+    width: calc(70% - 4vw);
+}
+
+.about-button
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(15% - 2vw);
+}
+
+.about-info
+{
+    margin-left: calc(15% + 1.8em);
+}
+
+.about-info > *:not(:last-child)
 {
     border-bottom: 2px solid black;
     padding-bottom: 5px;

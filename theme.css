@@ -1,18 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-figure img
+body
 {
-	margin-left: auto;
-	margin-right: auto;
-
-	max-width: 100%;
-	display: block;
-	height: auto;
+	background-color: #c0c0c0;
+	font-family: 'Press Start 2P', sans-serif;
 }
 
 main
 {
-	margin: 40px 40px 40px 40px;
+	margin: 1vw 1vw 1vw 1vw;
 }
 
 .window header
@@ -26,15 +22,11 @@ main
 	border-bottom: 2px solid black;
 }
 
-.window header > *:not(:first-child)
-{
-	border-left: 2px solid black;
-}
-
 .window header img
 {
 	flex-grow : 0;
 	height: 48px;
+	border-right: 2px solid black;
 }
 
 
@@ -44,12 +36,6 @@ main
 	color: white;
 	text-align: center;
 	margin: 0px;
-}
-
-.button-menu
-{
-	height: 100%;
-	background-color: #c0c0c0;
 }
 
 .window h1
@@ -64,8 +50,40 @@ main
 	background-color: white;
 }
 
-body
+.button, button
 {
-	background-color: #c0c0c0;
-	font-family: 'Press Start 2P', serif, sans-serif;
+    width: 100%;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+
+    background-color: #c0c0c0;
+    border-style: outset;
+    border-color: white #808080 #808080 white;
+    border-width: 3px;
+    position: relative;
+    z-index: auto;
+}
+
+.button:active, button:active
+{
+    padding: 8px 5px 2px 8px;
+    border-style: outset solid solid outset;
+    border-color: #808080 #c0c0c0 #c0c0c0 #808080;
+}
+
+.button::after, button::after
+{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    border-radius: 5px;
+    background: black;
+    z-index: -1;
 }

@@ -12,25 +12,17 @@
 				<img src="./assets/menu-icon.svg">
 				<h1 id="title">About Program Manager</h1>
 			</header>
-			<div class="content">
-				<div id="img-div"><figure>
-					<img id="image" src="./assets/Windows_logo_-_1992.svg" alt="add alt text"/>
-					<svg viewBox="0 0 152 20">
-						<text x="0" y="18">MICROSOFT.</text>
-  					</svg>
-					<svg viewBox="0 0 120 18">
-						<text x="0" y="15">WINDOWS.</text>
-  					</svg>
-				</figure></div>
-				<div>
-					<p>Microsoft Windows Program Manager</p>
-					<p>Version 3.1</p>
-					<p>Copyright &copy 1985-1992 Microsoft Corp.</p>
-				</div>
-				<div>
-					<button>OK</button>
-				</div>
-				<div id="tribute-info">
+			<div class="about">
+				<figure><div id="img-div">
+					<img id="image" class="about-img" src="./assets/Microsoft_Windows.svg" alt="add alt text"/>
+					<figcaption id="about-caption" class="about-caption">
+						<p>Microsoft Windows Program Manager</p>
+						<p>Version 3.1</p>
+						<p>Copyright &copy 1985-1992 Microsoft Corp.</p>
+					</figcaption>
+					<a id="tribute-link" class="button about-button" href="https://en.wikipedia.org/wiki/Windows_3.1x" target="_blank">OK</a>
+				</div></figure>
+				<div id="tribute-info" class="about-info">
 					<div>
 						<p>This product is licensed to:</p>
 						<p>Someone</p>
@@ -59,9 +51,6 @@
 							</tbody>
 						</table>
 					</div>
-					<p>
-						Add tribute info with a <a id="tribute-link" href="" target="_blank">link</a>
-					</p>
 				</div>
 			</div>
 		</main>
