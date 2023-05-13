@@ -24,6 +24,10 @@ X	Add text / content
 X	img
 X	Position stuff
 
+Portfolio
+
+	Fix dummy windows 1st part alternate aspect ratios
+
 Theme:
 
 	font similar to MS Sans Serif with a hint of blockiness to have an effect similar to low resolution
@@ -42,3 +46,4 @@ X	button shadow does not work. use border svg?
 	/* css comments */
 	svg duplication?
 	use more border-box for simpler lengths?
+X	remove button links color
