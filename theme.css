@@ -35,11 +35,31 @@ body
 .fullscreen header
 {
     position: fixed;
-    top: calc(1vw);
+    top: calc(1vh);
     left: calc(1vw + 8px);
     width: calc(94vw);
 
     box-shadow: 0 -20px 0 20px #c0c0c0;
+}
+
+@media screen and (min-width: 85em)
+{
+    .fullscreen
+    {
+        max-width: 80em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fullscreen header
+    {
+        position: fixed;
+        top: calc(1vh);
+        left: calc(50vw - 40em - 8px);
+        width: calc(80em);
+
+        box-shadow: 0 -20px 0 20px #c0c0c0;
+    }
 }
 
 .fullscreen header::before
@@ -54,11 +74,13 @@ body
     border-width: 60px;
     border-style: solid;
     border-image: url("assets/menubox-border-top.svg") 61;
+
+    pointer-events: none;
 }
 
 .fullscreen main
 {
-    padding-top: 10em;
+    padding: 10em 5em 0 5em;
 }
 
 .titlebar
@@ -113,7 +135,6 @@ nav > *
 
 .button, button, input[type = submit]
 {
-    width: 100%;
     font-family: 'Press Start 2P', sans-serif;
     font-size: 1em;
     text-align: center;
@@ -244,14 +265,4 @@ input[type=checkbox]
 input[type=checkbox]:checked + .checkbox-label::before
 {
     background-image: url("assets/checkboxx.svg");
-}
-
-
-
-
-/* move this */
-
-section
-{
-    scroll-margin-top: 5em;
 }

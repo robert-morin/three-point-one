@@ -22,7 +22,6 @@ X	Find 1993 computer in catalog for name/specs + img (https://radioshackcatalogs
 
 Theme:
 
-	understand more about z-index (why setting it in button does not work)
 	font similar to MS Sans Serif with a hint of blockiness to have an effect similar to low resolution
 X	button theming
 X	font
@@ -35,6 +34,6 @@ X	titlebar buttons
 	dropdown option theming possible?
 	number input arrows
 	use variables?
-	button shadow does not work. use border svg?
+X	button shadow does not work. use border svg?
 	/* css comments */
 	svg duplication?

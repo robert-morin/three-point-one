@@ -1,0 +1,29 @@
+section
+{
+    scroll-margin-top: 5em;
+    padding: 2em;
+}
+
+iframe
+{
+    display:block;
+    margin: auto;
+}
+
+form
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+form > *
+{
+    margin: 1em;
+}
+
+form > input[type = email]
+{
+    flex-grow: 1;
+}
