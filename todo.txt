@@ -11,12 +11,14 @@ X	responsive
 X	cleaning
 X	less px ?
 X	vertical only version to satisfy FCC
-	remove duplication vertical only / regular
+X	remove duplication vertical only / regular
 
 Radio Shack contest:
 
 X	Find 1993 computer in catalog for name/specs + img (https://radioshackcatalogs.com/flipbook/1993_radioshack_catalog.html?fb3d-page=170)
-	...
+	Add text / content
+	img
+	Position stuff
 
 Theme:
 
@@ -28,3 +30,7 @@ X	titlebar black borders
 X	active blue border
 X	active blue titlebar
 X	titlebar buttons
+	dropdown click? check with VM
+	focus? check with VM
+	dropdown option theming possible?
+	number input arrows

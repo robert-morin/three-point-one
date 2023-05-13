@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+        .drop
+        {
+            position: relative;
+            display: inline-block;
+        }
+        select
+        {
+            display: inline-block;
+            height: 2em;
+            width: 150px;
+            outline: none;
+            color: black;
+            border: 2px solid black;
+            font-size: 1em;
+            padding: 0.2em;
+            margin: 0.2em;
+            background-color: white;
+        }
+
+        .drop::before
+        {
+            content: '';
+            width: 2em;
+            height: 2em;
+            position: absolute;
+            display: block;
+            top: 0;
+            right: 0;
+            margin: 0.2em;
+            background: url("assets/drop-arrow.svg") center / calc(100% - 4px) no-repeat black;
+            pointer-events: none;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="mybox">
+      <select>
+        <option>Coffee</option>
+        <option>Tea</option>
+        <option>Juice</option>
+        <option selected>Cocktail</option>
+      </select>
+    </div>
+  </body>
+</html>

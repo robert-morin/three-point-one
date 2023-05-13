@@ -8,6 +8,8 @@ body
 
 main
 {
+    position: relative;
+    z-index: 10;
 	margin: 1vw 1vw 1vw 1vw;
 }
 
@@ -50,14 +52,13 @@ main
 	background-color: white;
 }
 
-.button, button
+.button, button, input[type = submit]
 {
     width: 100%;
     font-family: 'Press Start 2P', sans-serif;
     font-size: 1em;
     text-align: center;
     padding: 5px;
-    margin-top: 10px;
 
     background-color: #c0c0c0;
     border-style: outset;
@@ -67,7 +68,7 @@ main
     z-index: auto;
 }
 
-.button:active, button:active
+.button:active, button:active, input[type = submit]:active
 {
     padding: 8px 5px 2px 8px;
     border-style: outset solid solid outset;
@@ -86,4 +87,130 @@ main
     border-radius: 5px;
     background: black;
     z-index: -1;
+}
+
+.button-shadow
+{
+    content: '';
+    display: block;
+    border-radius: 5px;
+    background: black;
+    padding: 3px;
+}
+
+input[type=text], input[type=email], input[type=number], select
+{
+    border: 2px solid black;
+    font-family: inherit;
+    font-size: 1em;
+    padding: 0.2em;
+    margin: 0.2em;
+    background-color: white;
+    height: 2em;
+    box-sizing: content-box;
+}
+
+textarea
+{
+    border: 2px solid black;
+}
+
+select *
+{
+    color: black;
+    background-color: white;
+}
+
+.drop
+{
+    position: relative;
+    display: inline-block;
+}
+select
+{
+    display: inline-block;
+    height: 2em;
+    width: 150px;
+    outline: none;
+    color: black;
+}
+
+.drop::before
+{
+    content: '';
+    width: calc(2.4em + 4px);
+    height: calc(2.4em + 4px);
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    margin: 0.2em;
+    background: url("assets/drop-arrow.svg") center / calc(100% - 4px) no-repeat black;
+    pointer-events: none;
+}
+
+input[type=radio]
+{
+    position:absolute;
+    opacity: 0;
+    z-index: -9999;
+}
+
+.radio-label
+{
+    position: relative;
+    padding-left: 2em;
+    display: block;
+}
+
+.radio-label::before
+{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -0.25em;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    background: white;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+input[type=radio]:checked + .radio-label::before
+{
+    box-shadow: inset 0 0 0 0.2em white, 
+                inset 0px 0px 0.2em 1em black;
+}
+
+input[type=checkbox]
+{
+    position:absolute;
+    opacity: 0;
+    z-index: -9999;
+}
+
+.checkbox-label
+{
+    position: relative;
+    padding-left: 2em;
+    display: block;
+}
+
+.checkbox-label::before
+{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -0.25em;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    background: white;
+    border: 2px solid black;
+}
+
+input[type=checkbox]:checked + .checkbox-label::before
+{
+    background-image: url("assets/checkboxx.svg");
 }
