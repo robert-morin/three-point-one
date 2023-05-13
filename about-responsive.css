@@ -1,0 +1,51 @@
+@import url('about-vertical.css') only screen and (max-width: 799px);
+
+@media (min-width: 800px) 
+{
+    .about figure
+    {
+        position: relative;
+        margin-bottom: 5em;
+    }
+
+    .about-caption, .about-button
+    {
+        margin-left: 1em;
+    }
+
+    .about-img
+    {
+        width: calc(15% - 2vw);
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+
+        max-width: 100%;
+        height: auto;
+
+        top: -2em;
+        left: 0;
+    }
+
+    .about-caption
+    {
+        position: relative;
+        left: 15%;
+        width: calc(70% - 4vw);
+    }
+
+    .about-button
+    {
+        position: absolute;
+        top: -2em;
+        right: 0;
+        width: calc(15% - 2vw);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-info
+    {
+        margin-left: calc(15% + 1.6em);
+    }
+}

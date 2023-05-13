@@ -1,4 +1,3 @@
-
 .window
 {
     max-width: 60em;
@@ -12,49 +11,24 @@ table
 	margin-right: auto;
 }
 
-p
-{
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-
-th
-{
-    font-weight: normal;
-    text-align: left;
-}
-
-main
-{
-    position: relative;
-    z-index: 10;
-}
-
 main > :last-child
 {
     margin-bottom: 5em;
 }
 
-
-
-td:not(:first-child)
-{
-    padding-left: 30px;
-}
-
-.about > *
-{
-    margin: 1em;
-}
-
-.about-img, .about-caption, .about-button
-{
-    margin: 2em;
-}
-
 .about
 {
     text-align: center;
+}
+
+.about-button
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10em;
+    margin-left: calc(50% - 5em);
+    margin-right: calc(50% - 5em);
 }
 
 .about-img
@@ -64,27 +38,5 @@ td:not(:first-child)
 	margin-right: auto;
 
 	max-width: 100%;
-	display: block;
 	height: auto;
-}
-
-.about-button
-{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 10em;
-    display: block;
-    margin-left: calc(50% - 5em);
-    margin-right: calc(50% - 5em);
-}
-
-.about-info > *
-{
-    padding: 1em;
-}
-
-.about-info > *:not(:last-child)
-{
-    border-bottom: 2px solid black;
 }
