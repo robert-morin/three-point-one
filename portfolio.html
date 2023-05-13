@@ -26,34 +26,65 @@
 		</nav>
 		<main>
 			<section id="welcome-section" class="menubox fullscreen active">
-				<header>
-					<div class="titlebar">
-						<img src="./assets/menu-icon.svg">
-						<h1 id="title">About Me</h1>
-						<img src="./assets/minimize-icon.svg">
-						<img src="./assets/maximize-icon.svg">
-					</div>
+				<header class="titlebar">
+					<img src="./assets/menu-icon.svg">
+					<h1 id="title">About Me</h1>
+					<img src="./assets/minimize-icon.svg">
+					<img src="./assets/maximize-icon.svg">
 				</header>
-				<p>
-					Hi, I'm french-tries.
-				</p>
-				<p>
-					<a id="profile-link" target="_blank" href="https://ddg.gg">Link</a>
-				</p>
+				<div class="sub menubox">
+					<header class="titlebar">
+						<img src="./assets/submenu-icon.svg">
+						<h2 id="title">Selfie</h2>
+					</header>
+					<img src="./assets/mugshot.svg"/>
+				</div>
+				<div class="sub infobox active">
+					<header class="titlebar">
+						<img src="./assets/submenu-icon.svg">
+						<h2 id="title">About</h2>
+					</header>
+					<p>
+						Hi, I'm french-tries, an aspiring developer.
+					</p>
+					<p>
+						Grab a snack and watch my progress as I relearn programming.
+					</p>
+					<p>
+						<a id="profile-link" class="button" target="_blank" href="https://ddg.gg">Github</a>
+					</p>
+				</div>
+				<div class="sub menubox">
+					<header class="titlebar">
+						<img src="./assets/submenu-icon.svg">
+						<h2 id="title">Useful info</h2>
+					</header>
+					<p>
+						The way to find infinite happiness is "Redacted"...
+					</p>
+				</div>
+				<div class="sub menubox">
+					<header class="titlebar">
+						<img src="./assets/submenu-icon.svg">
+						<h2 id="title">Why</h2>
+					</header>
+					<p>
+						Why french-tries? At the time, I was following an online course and tries was the current subject.
+						 I was hungry, then magic happened. 
+					</p>
+				</div>
 			</section>
 			<section id="projects" class="menubox fullscreen active">
-				<header>
-					<div class="titlebar">
+				<header class="titlebar">
 						<img src="./assets/menu-icon.svg">
 						<h1 id="title">freecodecamp - Responsive Web Design Projects</h1>
 						<img src="./assets/minimize-icon.svg">
 						<img src="./assets/maximize-icon.svg">
-					</div>
 				</header>
-				<article class="sub infobox active project-tile">
+				<article class="sub menubox project-tile">
 					<header class="titlebar">
 						<img src="./assets/submenu-icon.svg">
-						<h1 id="title">Windows 3.1 about window</h1>
+						<h2 id="title">Windows 3.1 about window</h2>
 					</header>
 					<img class="big-pic" src="./assets/shots/about.png" alt="add alt text"/>
 					<p>
@@ -66,10 +97,10 @@
 						<a id="tribute-link" class="button about-button" href="#" target="_blank">Page</a>
 					</div>
 				</article>
-				<article class="sub infobox active project-tile">
+				<article class="sub menubox project-tile">
 					<header class="titlebar">
 						<img src="./assets/submenu-icon.svg">
-						<h1 id="title">Windows 3.1 about window - Vertical version</h1>
+						<h2 id="title">Windows 3.1 about window - Vertical version</h2>
 					</header>
 					<img class="big-pic" src="./assets/shots/about-vertical.png" alt="add alt text"/>
 					<p>
@@ -82,10 +113,10 @@
 						<a id="tribute-link" class="button about-button" href="#" target="_blank">Page</a>
 					</div>
 				</article>
-				<article class="sub infobox active project-tile">
+				<article class="sub menubox project-tile">
 					<header class="titlebar">
 						<img src="./assets/submenu-icon.svg">
-						<h1 id="title">Retro gaming contest</h1>
+						<h2 id="title">Retro gaming contest</h2>
 					</header>
 					<img class="big-pic" src="./assets/shots/survey.png" alt="add alt text"/>
 					<p>
@@ -98,10 +129,10 @@
 						<a id="tribute-link" class="button about-button" href="#" target="_blank">Page</a>
 					</div>
 				</article>
-				<article class="sub infobox active project-tile">
+				<article class="sub menubox project-tile">
 					<header class="titlebar">
 						<img src="./assets/submenu-icon.svg">
-						<h1 id="title">Tandy Sensation landing page</h1>
+						<h2 id="title">Tandy Sensation landing page</h2>
 					</header>
 					<img class="big-pic" src="./assets/shots/landing.png" alt="add alt text"/>
 					<p>
@@ -113,10 +144,10 @@
 						<a id="tribute-link" class="button about-button" href="#" target="_blank">Page</a>
 					</div>
 				</article>
-				<article class="sub infobox active project-tile">
+				<article class="sub menubox project-tile">
 					<header class="titlebar">
 						<img src="./assets/submenu-icon.svg">
-						<h1 id="title">Extracts from the Windows 3.1 help</h1>
+						<h2 id="title">Extracts from the Windows 3.1 help</h2>
 					</header>
 					<img class="big-pic" src="./assets/shots/docu.png" alt="add alt text"/>
 					<p>
@@ -130,12 +161,12 @@
 						<a id="tribute-link" class="button about-button" href="#" target="_blank">Page</a>
 					</div>
 				</article>
-				<article class="sub infobox active project-tile">
+				<article class="sub menubox project-tile">
 					<header class="titlebar">
 						<img src="./assets/submenu-icon.svg">
-						<h1 id="title">This page...</h1>
+						<h2 id="title">This page...</h2>
 					</header>
-					<img class="big-pic" src="./assets/shots/about.png" alt="add alt text"/>
+					<img class="big-pic" src="./assets/shots/port.png" alt="add alt text"/>
 					<p>
 						This page. I had to scratch my head a bit to make fit the theme with the requirements
 						(the nav had to be a child of the body). Click the page button if you like recursion.

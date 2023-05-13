@@ -1,0 +1,24 @@
+<svg version="1.1"
+	baseProfile="full"
+	viewBox="0 0 60 40"
+	xmlns="http://www.w3.org/2000/svg">
+
+    <text x="0" y="35" font-size="40">&#127839;</text>
+	<text x="37" y="30" font-size="16">
+        <animateTransform id="anim1" attributeName="transform"
+                          attributeType="XML"
+                          type="rotate"
+                          from="0 45 30"
+                          to="45 45 30"
+                          begin="0s;anim2.end"
+                          dur="1s"
+                          />
+        <animateTransform  id="anim2" attributeName="transform" type="rotate"
+                            from="45 45 30"
+                            to="0 45 30"
+                            begin="anim1.end"
+                            dur="1s"
+                            />
+        &#128075;
+    </text>
+</svg>

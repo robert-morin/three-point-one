@@ -4,6 +4,7 @@ General:
 	titles
 	alt text?
 	semantic html
+	h1 - h6
 
 About Page:
 
