@@ -6,48 +6,49 @@
 		<link rel="stylesheet" href="theme.css" />
 	</head>
 	<body>
-		<main class="window active">
+		<div class="window active">
 			<header>
 				<img src="./assets/menu-icon.svg">
-				<h1 id="title">Mega Tandy Computer Giveaway*</h1>
+				<h1 id="title">Mega something something Giveaway*</h1>
 			</header>
-			<p id="description">Catchy text... with warning not real contest.</p>
-			<form id="survey-form" action="/submit-survey">
-				<label id="name-label" for="name">Name:</label>
-				<input type="text" id="name" name="name" placeholder="name" required>
-				<label id="email-label" for="email">Email:</label>
-				<input type="email" id="email" name="email" placeholder="email" required>
-				<label id="number-label" for="number">Number:</label>
-				<input type="number" id="number" name="number" placeholder="number" min="1" max="5">
-				<label for="dropdown">Drop:</label>
-				<span class="drop"><select id="dropdown" name="drop">
-					<option value="a">A</option>
-					<option value="b">B</option>
-					<option value="c">C</option>
-				</select></span>
-				<fieldset>
-					<legend>Choose one of these three items:</legend>
-					<input id="one" type="radio" name="items" value="one">
-					<label class="radio-label" for="one">Choice One</label><br>
-					<input id="two" type="radio" name="items" value="two">
-					<label class="radio-label" for="two">Choice Two</label><br>
-					<input id="three" type="radio" name="items" value="three">
-					<label class="radio-label" for="three">Choice Three</label>
-				</fieldset>
-				<fieldset>
-					<legend>Checks:</legend>
-					<input id="cone" type="checkbox" name="checks" value="one">
-					<label class="checkbox-label" for="cone">Choice One</label><br>
-					<input id="ctwo" type="checkbox" name="checks" value="two">
-					<label class="checkbox-label" for="ctwo">Choice Two</label><br>
-					<input id="cthree" type="checkbox" name="checks" value="three">
-					<label class="checkbox-label" for="cthree">Choice Three</label>
-				</fieldset>
-				<label for="story">Tell us your story:</label>
-				<textarea id="story" name="story" rows="5" cols="33"></textarea>
-				<div class="button-shadow"><input id="submit" type="submit" value="Submit"></div>
-			</form>
-		</main>
+			<main>
+				<p id="description">Enter and have a chance to win* something something.</p>
+				<p>* This is not a real contest. There are no price to be won. Nothing at all.</p>
+				<form id="survey-form" action="/submit-survey">
+					<label id="name-label" for="name">Name:</label>
+					<input type="text" id="name" name="name" placeholder="name" required>
+					<label id="email-label" for="email">Email:</label>
+					<input type="email" id="email" name="email" placeholder="email" required>
+					<fieldset>
+						<legend>Country:</legend>
+						<input id="one" type="radio" name="items" value="one">
+						<label class="radio-label" for="one">Canada</label><br>
+						<input id="two" type="radio" name="items" value="two">
+						<label class="radio-label" for="two">United States</label><br>
+					</fieldset>
+					<label for="dropdown">State or province:</label>
+					<span class="drop"><select id="dropdown" name="drop">
+						<option value="a">A</option>
+						<option value="b">B</option>
+						<option value="c">C</option>
+					</select></span>
+					<label id="number-label" for="number">Please answer this random mathematical question:</label>
+					<input type="number" id="number" name="number" placeholder="number" min="1" max="5">
+					<fieldset>
+						<legend>Checks:</legend>
+						<input id="cone" type="checkbox" name="checks" value="one">
+						<label class="checkbox-label" for="cone">Choice One</label><br>
+						<input id="ctwo" type="checkbox" name="checks" value="two">
+						<label class="checkbox-label" for="ctwo">Choice Two</label><br>
+						<input id="cthree" type="checkbox" name="checks" value="three">
+						<label class="checkbox-label" for="cthree">Choice Three</label>
+					</fieldset>
+					<label for="other">Other:</label>
+					<textarea id="other" name="other" rows="5" cols="33"></textarea>
+					<div class="button-shadow"><input id="submit" type="submit" value="Submit"></div>
+				</form>
+			</main>
+		</div>
 	</body>
 	<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>

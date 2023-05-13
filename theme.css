@@ -6,7 +6,7 @@ body
 	font-family: 'Press Start 2P', sans-serif;
 }
 
-main
+.window
 {
     position: relative;
     z-index: 10;
@@ -32,7 +32,7 @@ main
 }
 
 
-.window.active > header
+.window.active header
 {
 	background-color: #000080;
 	color: white;
