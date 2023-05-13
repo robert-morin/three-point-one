@@ -8,17 +8,58 @@ figure img
 	height: auto;
 }
 
-header
-{
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-}
-
 main
 {
-	margin-top: 400px;
+	margin: 40px 40px 40px 40px;
+}
+
+.window header
+{
+	display: flex;
+}
+
+.window header > *
+{
+	flex-grow : 1;
+	border-bottom: 2px solid black;
+}
+
+.window header > *:not(:first-child)
+{
+	border-left: 2px solid black;
+}
+
+.window header img
+{
+	flex-grow : 0;
+	height: 48px;
+}
+
+
+.window.active > header
+{
+	background-color: #000080;
+	color: white;
+	text-align: center;
+	margin: 0px;
+}
+
+.button-menu
+{
+	height: 100%;
+	background-color: #c0c0c0;
+}
+
+.window h1
+{
+	margin: 5px 0 0 0;
+}
+
+.active
+{
+	border: 10px solid #000080;
+	padding: 2px;
+	background-color: white;
 }
 
 body

@@ -1,0 +1,12 @@
+	font
+	about left img
+	button formatting
+	top menu bar
+	inactive double border
+	inactive titlebar
+
+X	about text formating
+X	titlebar black borders
+X	active blue border
+X	active blue titlebar
+X	titlebar buttons

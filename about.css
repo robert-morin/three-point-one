@@ -1,0 +1,64 @@
+.content
+{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto auto;
+    grid-gap: 5px;
+
+    grid-template-areas: 
+    "img top button"
+    "img content content"
+}
+
+p
+{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+button
+{
+    width: 100%;
+}
+
+th
+{
+    font-weight:normal;
+    text-align: left;
+}
+
+td:not(:first-child)
+{
+    padding-left: 30px;
+}
+
+.content > *
+{
+    margin: 15px;
+}
+
+.content > :nth-child(1)
+{
+    grid-area: img;
+}
+
+.content > :nth-child(2)
+{
+    grid-area: top;
+}
+
+.content > :nth-child(3)
+{
+    grid-area: button;
+}
+
+.content > :nth-child(4)
+{
+    grid-area: content;
+}
+
+#tribute-info > *:not(:last-child)
+{
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
