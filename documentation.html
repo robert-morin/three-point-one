@@ -7,14 +7,16 @@
 		<link rel="stylesheet" href="documentation.css" />
 	</head>
 	<body>
-		<div class="menubox fullscreen active">
-			<div class="titlebar">
-				<img src="./assets/menu-icon.svg">
-				<h1 id="title">How to Use Help</h1>
-				<img src="./assets/minimize-icon.svg">
-				<img src="./assets/maximize-icon.svg">
-			</div>
-			<nav id="navbar" class="sidebar">
+		<main id="main-doc" class="menubox fullscreen active">
+			<header>
+				<div class="titlebar">
+					<img src="./assets/menu-icon.svg">
+					<h1 id="title">How to Use Help</h1>
+					<img src="./assets/minimize-icon.svg">
+					<img src="./assets/maximize-icon.svg">
+				</div>
+			</header>
+			<aside id="navbar">
 				<header>
 					<h2>Moving Around in Help<h2>
 				</header>
@@ -44,8 +46,8 @@
 					<li><a class="nav-link" href="#Scrolling_Through_a_Help_Topic">Scrolling Through a Help Topic</a></li>
 					<li><a class="nav-link" href="#Searching_for_a_Help_Topic">Searching for a Help Topic</a></li>
 				</ul>
-			</nav>
-			<main id="main-doc">
+			</aside>
+			<div class="content">
 				<section id="Backtracking_Through_Help_Topics" class="main-section">
 					<header>
 						<h2>Backtracking Through Help Topics</h2>
@@ -318,8 +320,8 @@
 					</ol>
 					<p>See Also<br/><a href="#">Moving Around in Help</a></p>
 				</section>
-			</main>
-		</div>
+			</div>
+		</main>
 	</body>
 	<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>

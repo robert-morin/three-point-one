@@ -3,28 +3,47 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
-		<!--link rel="stylesheet" href="theme.css" /-->
+		<link rel="stylesheet" href="theme.css" />
 	</head>
 	<body>
-		<nav id="navbar">
-			<ul>
-				<li><a class="nav-link" href="#welcome-section">Welcome</a></li>
-				<li><a class="nav-link" href="#projects">Projects</a></li>
-			</ul>
-		</nav>
-		<main>
+		<main class="menubox fullscreen active">
+			<header>
+				<div class="titlebar">
+					<img src="./assets/menu-icon.svg">
+					<h1 id="title">Title title title</h1>
+					<img src="./assets/minimize-icon.svg">
+					<img src="./assets/maximize-icon.svg">
+				</div>
+				<nav id="nav-bar">
+					<a class="nav-link" href="#welcome-section">Welcome</a>
+					<a class="nav-link" href="#projects">Projects</a>
+				</nav>
+			</header>
 			<section id="welcome-section">
 				<header>
 					<h1>Welcome!</h1>
 				</header>
 				<p>
+					Hi, I'm french-tries.
+				</p>
+				<p>
 					<a id="profile-link" target="_blank" href="https://ddg.gg">Link</a>
 				</p>
 			</section>
 			<section id="projects">
-				<section class="project-tile">
-					<p><a href="https://ddg.gg">Project #1</a></p>
-				</section>
+				<article class="infobox active project-tile">
+					<header class="titlebar">
+						<img src="./assets/menu-icon.svg">
+						<h1 id="title">DocuDocu</h1>
+					</header>
+					<img class="big-pic" src="./assets/shots/docu.png" alt="add alt text"/>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam delectus deserunt molestias commodi numquam itaque dicta! Facere, recusandae! Quia sed eos non ducimus praesentium error quidem ad nam, optio cumque.</p>
+					<div class="links">
+						<a id="tribute-link" class="button about-button" href="#" target="_blank">OK</a>
+						<a id="tribute-link" class="button about-button" href="#" target="_blank">OK</a>
+						<a id="tribute-link" class="button about-button" href="#" target="_blank">OK</a>
+					</div>
+				</article>
 			</section>
 		</main>
 	</body>

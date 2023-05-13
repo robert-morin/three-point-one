@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+/*
+    Variables
+*/
 :root {
-    --header-height: 48px;
+    --header-height: 50px;
   }
 
+/*
+  Body theming
+*/
 body
 {
 	background-color: #c0c0c0;
@@ -15,48 +21,23 @@ body
     font-family: 'Press Start 2P', sans-serif;
 }
 
-/* make grid work without sidebar? */
+/*
+    Window dressing
+*/
 .infobox, .menubox
 {
     position: relative;
 	margin: 1vw;
     background-color: white;
-    width: 94vw;
     box-sizing: border-box;
-
     display: flex;
     flex-wrap: wrap;
 }
 
-.infobox main, .menubox main
+.infobox.active
 {
-    flex-grow: 1;
-    margin: 1em;
-}
-
-.infobox .sidebar, .menubox .sidebar
-{
-    margin: 1em;
-    z-index: 1;
-}
-
-@media screen and (min-width: 70em)
-{
-    .infobox main, .menubox main
-    {
-        width: calc(65% - 2em);
-    }
-
-    .infobox .sidebar, .menubox .sidebar
-    {
-        width:  calc(35% - 2em);
-        flex-shrink: 0;
-
-        align-self: start;
-
-        position: sticky;
-        top: 0;
-    }
+	border: 10px solid #000080;
+	padding: 2px;
 }
 
 .menubox::before
@@ -73,6 +54,17 @@ body
     border-image: url("assets/menubox-border.svg") 61;
 }
 
+.infobox > *:nth-child(n + 2), .menubox > *:nth-child(n + 2)
+{
+    margin: 1em;
+}
+
+.infobox > header, .menubox > header
+{
+    width: 100%;
+}
+
+
 .fixed > header
 {
     position: fixed;
@@ -81,6 +73,33 @@ body
     width: calc(94vw);
 
     box-shadow: 0 -20px 0 20px #c0c0c0;
+}
+
+.fixed > *:nth-child(2)
+{
+    padding-top: 5em;
+}
+
+
+.menubox.fixed > header::before
+{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
+
+    border-width: 60px;
+    border-style: solid;
+    border-image: url("assets/menubox-border-top.svg") 61;
+
+    pointer-events: none;
+}
+
+.infobox.fullscreen, .menubox.fullscreen
+{
+    width: 94vw;
 }
 
 @media screen and (min-width: 85em)
@@ -103,45 +122,14 @@ body
     }
 }
 
-.menubox.fullscreen > header::before
-{
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    width: calc(100% - 100px);
-    height: calc(100% - 100px);
-
-    border-width: 60px;
-    border-style: solid;
-    border-image: url("assets/menubox-border-top.svg") 61;
-
-    pointer-events: none;
-}
-
-.fixed main
-{
-    padding-top: 10em;
-}
-
+/*
+    Window Header theming
+*/
 .titlebar
 {
     width: 100%;
-    flex-shrink: 0;
 	display: flex;
-}
-
-.titlebar > *
-{
-	flex-grow : 1;
-	border-bottom: 2px solid black;
-}
-
-.titlebar img
-{
-	flex-grow : 0;
-	height: var(--header-height);
-	border-right: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 .infobox.active .titlebar, .menubox.active .titlebar
@@ -152,40 +140,91 @@ body
 	margin: 0px;
 }
 
-.titlebar h1
+.titlebar > *:nth-child(n+2), .titlebar > *:nth-child(n+2)
 {
+	border-left: 2px solid black;
+}
+
+.titlebar > img, .titlebar > img
+{
+    height: 48px;
+	width: auto;
+	flex-grow : 0;
+}
+
+.titlebar > h1, .titlebar > h1
+{
+    flex-grow : 1;
 	margin: 5px 0 0 0;
 }
 
-.infobox.active
+.infobox > header > nav, .menubox > header > nav
 {
-	border: 10px solid #000080;
-	padding: 2px;
-}
-
-.menubar
-{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     background-color: white;
     border-bottom: 2px solid black;
 }
 
-.menubar > *
+.infobox > header > nav > *, .menubox > header > nav > *
 {
     padding: 0.3em 1em;
 }
 
+/*
+    Window aside and content
+*/
+
+.infobox > aside, .menubox > aside
+{
+    width: 100%;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.infobox > .content, .menubox > .content
+{
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 70em)
+{
+    .infobox > aside, .menubox > aside
+    {
+        width: 30%;
+
+        flex-shrink: 0;
+        align-self: start;
+        position: sticky;
+        top: 0;
+    }
+
+    .infobox .content, .menubox .content
+    {
+        width: calc(65% - 2em);
+    }
+}
+
+/*
+    Form elements theming
+*/
+
 .button, button, input[type = submit]
 {
-    font-family: 'Press Start 2P', sans-serif;
-    /*font-family: sans-serif;*/
+    box-sizing: border-box;
+    font-family: sans-serif;
     font-size: 1em;
     text-align: center;
     padding: 5px;
 
     border: 6px solid;
     border-image: url("assets/button-border.svg") 20 fill;
+}
+
+.button.vintage, button.vintage, input[type = submit].vintage
+{
+    font-family: 'Press Start 2P', sans-serif;
 }
 
 .button:active, button:active, input[type = submit]:active
@@ -211,6 +250,14 @@ textarea
     border: 2px solid black;
 }
 
+select
+{
+    display: inline-block;
+    height: 2em;
+    outline: none;
+    color: black;
+}
+
 select *
 {
     color: black;
@@ -221,13 +268,6 @@ select *
 {
     position: relative;
     display: inline-block;
-}
-select
-{
-    display: inline-block;
-    height: 2em;
-    outline: none;
-    color: black;
 }
 
 .drop::before
@@ -309,4 +349,47 @@ input[type=checkbox]
 input[type=checkbox]:checked + .checkbox-label::before
 {
     background-image: url("assets/checkboxx.svg");
+}
+
+
+
+
+
+
+
+
+.project-tile
+{
+    width: 40%;
+}
+
+.project-tile > *
+{
+    margin: 1em;
+}
+
+.big-pic
+{
+    width: 100%;
+    flex-grow: 1;
+    border: solid 1px black;
+}
+
+.links
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.links > *
+{
+    width: 30%;
+    flex-grow: 1;
+}
+
+.links > *:nth-child(n+2)
+{
+    margin-left: 1em;
 }
