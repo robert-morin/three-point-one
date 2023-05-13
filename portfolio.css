@@ -1,0 +1,138 @@
+
+body > nav
+{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100vw;
+    z-index: 1;
+    background-color: #c0c0c0;
+
+    display: flex;
+    justify-content: center;
+
+    border-bottom: 1px solid black;
+}
+
+body > nav + *
+{
+    margin-top: 6.66em;
+}
+
+body > nav + * > section
+{
+    scroll-margin-top: 6.66em;
+}
+
+.nav-link
+{
+    text-align: center;
+}
+
+.nav-link svg
+{
+    width: 2.3em;
+    height: auto;
+}
+
+#welcome-section
+{
+    height: 100vh;
+    max-width: 60em;
+    position: relative;
+    text-align: justify;
+}
+
+#welcome-section > *:nth-child(2)
+{
+    position: absolute;
+    top: 4em;
+    right: 5%;
+    width: 25em;
+    height: auto;
+}
+
+#welcome-section > *:nth-child(3)
+{
+    position: absolute;
+    top: 16em;
+    left: 5%;
+    width: 25em;
+    height: auto;
+    font-size: larger;
+}
+
+#welcome-section > *:nth-child(4)
+{
+    position: absolute;
+    bottom: 13.5em;
+    left: calc(53% - 12.5em);
+    width: 25em;
+    height: auto;
+}
+
+#welcome-section > *:nth-child(5)
+{
+    position: absolute;
+    bottom: 7.5em;
+    left: calc(50% - 12.5em);
+    width: 25em;
+    height: auto;
+}
+
+
+#projects
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.project-tile > *:not(header)
+{
+    margin: 1em;
+}
+
+.project-tile
+{
+    width: 47%;
+}
+
+.project-tile > *:not(header)
+{
+    margin: 1em;
+}
+
+.project-tile:hover > .titlebar
+{
+	background-color: #000080;
+	color: white;
+	margin: 0px;
+    font-weight: bold;
+}
+
+.big-pic
+{
+    width: 100%;
+    flex-grow: 1;
+    border: solid 1px black;
+}
+
+.links
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.links > *
+{
+    width: 30%;
+    flex-grow: 1;
+}
+
+.links > *:nth-child(n+2)
+{
+    margin-left: 1em;
+}
