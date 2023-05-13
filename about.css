@@ -15,11 +15,6 @@ td:not(:first-child)
     padding-left: 30px;
 }
 
-.about > *
-{
-    margin: 1em;
-}
-
 .about-img, .about-caption, .about-button
 {
     margin: 2em;

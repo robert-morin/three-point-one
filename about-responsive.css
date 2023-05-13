@@ -1,6 +1,6 @@
-@import url('about-vertical.css') only screen and (max-width: 799px);
+@import url('about-vertical.css') only screen and (max-width: 70em);
 
-@media (min-width: 800px) 
+@media (min-width: 70em)
 {
     .about figure
     {
@@ -46,6 +46,6 @@
 
     .about-info
     {
-        margin-left: calc(15% + 1.6em);
+        margin-left: calc(15% + 2.8em);
     }
 }

@@ -7,8 +7,12 @@
 body
 {
 	background-color: #c0c0c0;
-	font-family: 'Press Start 2P', sans-serif;
-    /*font-family: sans-serif;*/
+    font-family: sans-serif;
+}
+
+.vintage
+{
+    font-family: 'Press Start 2P', sans-serif;
 }
 
 /* make grid work without sidebar? */
@@ -19,48 +23,33 @@ body
     background-color: white;
     width: 94vw;
 
-    display: grid;
-    grid-template-columns: 35% auto;
-    grid-template-rows: auto;
-
-    grid-template-areas: 
-        "titlebar titlebar"
-        "sidebar sidebar"
-        "main main";
+    display: flex;
+    flex-wrap: wrap;
 }
-/*
-.infobox > *, .menubox > *
-{
-    margin: 5em 5em 0em 5em;
-}
-
-.infobox > *:last-child, .menubox > *:last-child
-{
-    margin-bottom: 5em;
-}
-*/
 
 .infobox main, .menubox main
 {
-    grid-area: main;
+    flex-grow: 1;
+    margin: 1em;
 }
 
 .infobox .sidebar, .menubox .sidebar
 {
-    grid-area: sidebar;
+    margin: 1em;
 }
 
 @media screen and (min-width: 70em)
 {
-    .infobox, .menubox
-    { 
-        grid-template-areas: 
-            "titlebar titlebar"
-            "sidebar main";
+    .infobox main, .menubox main
+    {
+        width: calc(65% - 2em);
     }
 
     .infobox .sidebar, .menubox .sidebar
     {
+        width:  calc(35% - 2em);
+        flex-shrink: 0;
+
         align-self: start;
 
         position: sticky;
@@ -135,7 +124,8 @@ body
 
 .titlebar
 {
-    grid-area: titlebar;
+    width: 100%;
+    flex-shrink: 0;
 	display: flex;
 }
 
