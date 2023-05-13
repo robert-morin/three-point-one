@@ -1,10 +1,19 @@
-	font
-	about left img
-	button formatting
-	top menu bar
-	inactive double border
-	inactive titlebar
+General:
 
+	font similar to MS Sans Serif with a hint of blockiness to have an effect similar to low resolution
+
+About Page:
+
+	about left img
+	working link
+	understand more z-index (why setting it in button does not work)
+	less px ?
+
+
+Done:
+
+X	button theming
+X	font
 X	about text formating
 X	titlebar black borders
 X	active blue border
