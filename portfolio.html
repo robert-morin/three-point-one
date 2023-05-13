@@ -6,22 +6,33 @@
 		<link rel="stylesheet" href="theme.css" />
 	</head>
 	<body>
-		<main class="menubox fullscreen active">
-			<header>
-				<div class="titlebar">
-					<img src="./assets/menu-icon.svg">
-					<h1 id="title">Title title title</h1>
-					<img src="./assets/minimize-icon.svg">
-					<img src="./assets/maximize-icon.svg">
-				</div>
-				<nav id="nav-bar">
-					<a class="nav-link" href="#welcome-section">Welcome</a>
-					<a class="nav-link" href="#projects">Projects</a>
-				</nav>
-			</header>
-			<section id="welcome-section">
+		<nav id="navbar">
+			<a class="nav-link" href="#welcome-section">
+				<figure>
+					<svg viewBox="0 0 16 16">
+						<text x="0" y="14">&#127839;</text>
+					</svg>
+					<figcaption>About Me</figcaption>
+				</figure>
+			</a>
+			<a class="nav-link" href="#projects">
+				<figure>
+					<svg viewBox="0 0 16 16">
+						<text x="0" y="14">&#127760;</text>
+					</svg>
+					<figcaption>Projects</figcaption>
+				</figure>
+			</a>
+		</nav>
+		<main>
+			<section id="welcome-section" class="menubox fullscreen active">
 				<header>
-					<h1>Welcome!</h1>
+					<div class="titlebar">
+						<img src="./assets/menu-icon.svg">
+						<h1 id="title">About Me</h1>
+						<img src="./assets/minimize-icon.svg">
+						<img src="./assets/maximize-icon.svg">
+					</div>
 				</header>
 				<p>
 					Hi, I'm french-tries.
@@ -30,18 +41,109 @@
 					<a id="profile-link" target="_blank" href="https://ddg.gg">Link</a>
 				</p>
 			</section>
-			<section id="projects">
-				<article class="infobox active project-tile">
-					<header class="titlebar">
+			<section id="projects" class="menubox fullscreen active">
+				<header>
+					<div class="titlebar">
 						<img src="./assets/menu-icon.svg">
-						<h1 id="title">DocuDocu</h1>
+						<h1 id="title">freecodecamp - Responsive Web Design Projects</h1>
+						<img src="./assets/minimize-icon.svg">
+						<img src="./assets/maximize-icon.svg">
+					</div>
+				</header>
+				<article class="sub infobox active project-tile">
+					<header class="titlebar">
+						<img src="./assets/submenu-icon.svg">
+						<h1 id="title">Windows 3.1 about window</h1>
+					</header>
+					<img class="big-pic" src="./assets/shots/about.png" alt="add alt text"/>
+					<p>
+						My first freecodecamp project. I wanted to try to use the same theme for all projects. I also wanted
+						it not to be a theme to complex (I know myself), so I decided to go retro.
+					</p>
+					<div class="links">
+						<a id="tribute-link" class="button about-button" href="#" target="_blank">Github</a>
+						<a id="tribute-link" class="button about-button" href="#" target="_blank">Codepen</a>
+						<a id="tribute-link" class="button about-button" href="#" target="_blank">Page</a>
+					</div>
+				</article>
+				<article class="sub infobox active project-tile">
+					<header class="titlebar">
+						<img src="./assets/submenu-icon.svg">
+						<h1 id="title">Windows 3.1 about window - Vertical version</h1>
+					</header>
+					<img class="big-pic" src="./assets/shots/about-vertical.png" alt="add alt text"/>
+					<p>
+						Variation of the first project, since the pic in the first project had to be centered. I simply used
+						the responsive version for phones I already made.
+					</p>
+					<div class="links">
+						<a id="tribute-link" class="button about-button" href="#" target="_blank">Github</a>
+						<a id="tribute-link" class="button about-button" href="#" target="_blank">Codepen</a>
+						<a id="tribute-link" class="button about-button" href="#" target="_blank">Page</a>
+					</div>
+				</article>
+				<article class="sub infobox active project-tile">
+					<header class="titlebar">
+						<img src="./assets/submenu-icon.svg">
+						<h1 id="title">Retro gaming contest</h1>
+					</header>
+					<img class="big-pic" src="./assets/shots/survey.png" alt="add alt text"/>
+					<p>
+						The second freecodecamp project, which was the fourth I completed since I was not finding a subject idea I liked.
+						I finally went for a contest for a game of the time. (Also, Chip's Challenge is cool.)
+					</p>
+					<div class="links">
+						<a id="tribute-link" class="button about-button" href="#" target="_blank">Github</a>
+						<a id="tribute-link" class="button about-button" href="#" target="_blank">Codepen</a>
+						<a id="tribute-link" class="button about-button" href="#" target="_blank">Page</a>
+					</div>
+				</article>
+				<article class="sub infobox active project-tile">
+					<header class="titlebar">
+						<img src="./assets/submenu-icon.svg">
+						<h1 id="title">Tandy Sensation landing page</h1>
+					</header>
+					<img class="big-pic" src="./assets/shots/landing.png" alt="add alt text"/>
+					<p>
+						My third freecodecamp project. I browsed old Radio Shack catalogs until I found an old item to use.
+					</p>
+					<div class="links">
+						<a id="tribute-link" class="button about-button" href="#" target="_blank">Github</a>
+						<a id="tribute-link" class="button about-button" href="#" target="_blank">Codepen</a>
+						<a id="tribute-link" class="button about-button" href="#" target="_blank">Page</a>
+					</div>
+				</article>
+				<article class="sub infobox active project-tile">
+					<header class="titlebar">
+						<img src="./assets/submenu-icon.svg">
+						<h1 id="title">Extracts from the Windows 3.1 help</h1>
 					</header>
 					<img class="big-pic" src="./assets/shots/docu.png" alt="add alt text"/>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam delectus deserunt molestias commodi numquam itaque dicta! Facere, recusandae! Quia sed eos non ducimus praesentium error quidem ad nam, optio cumque.</p>
+					<p>
+						For the fourth freecodecamp project, I copied a section of the  Windows 3.1 help documentation.
+						In the beginning, I was planning to recreate the non interactive sections of the mouse tutorial,
+						but decided to do it after I went through the javascript section to make it justice.
+					</p>
 					<div class="links">
-						<a id="tribute-link" class="button about-button" href="#" target="_blank">OK</a>
-						<a id="tribute-link" class="button about-button" href="#" target="_blank">OK</a>
-						<a id="tribute-link" class="button about-button" href="#" target="_blank">OK</a>
+						<a id="tribute-link" class="button about-button" href="#" target="_blank">Github</a>
+						<a id="tribute-link" class="button about-button" href="#" target="_blank">Codepen</a>
+						<a id="tribute-link" class="button about-button" href="#" target="_blank">Page</a>
+					</div>
+				</article>
+				<article class="sub infobox active project-tile">
+					<header class="titlebar">
+						<img src="./assets/submenu-icon.svg">
+						<h1 id="title">This page...</h1>
+					</header>
+					<img class="big-pic" src="./assets/shots/about.png" alt="add alt text"/>
+					<p>
+						This page. I had to scratch my head a bit to make fit the theme with the requirements
+						(the nav had to be a child of the body). Click the page button if you like recursion.
+					</p>
+					<div class="links">
+						<a id="tribute-link" class="button about-button" href="#" target="_blank">Github</a>
+						<a id="tribute-link" class="button about-button" href="#" target="_blank">Codepen</a>
+						<a id="tribute-link" class="button about-button" href="#" target="_blank">Page</a>
 					</div>
 				</article>
 			</section>

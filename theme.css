@@ -27,7 +27,6 @@ body
 .infobox, .menubox
 {
     position: relative;
-	margin: 1vw;
     background-color: white;
     box-sizing: border-box;
     display: flex;
@@ -71,6 +70,7 @@ body
     top: calc(1vh);
     left: calc(1vw + 8px);
     width: calc(94vw);
+    z-index: 1;
 
     box-shadow: 0 -20px 0 20px #c0c0c0;
 }
@@ -97,8 +97,9 @@ body
     pointer-events: none;
 }
 
-.infobox.fullscreen, .menubox.fullscreen
+.fullscreen
 {
+    margin: 0 auto 3em;
     width: 94vw;
 }
 
@@ -132,7 +133,7 @@ body
     border-bottom: 2px solid black;
 }
 
-.infobox.active .titlebar, .menubox.active .titlebar
+.active .titlebar
 {
 	background-color: #000080;
 	color: white;
@@ -140,16 +141,21 @@ body
 	margin: 0px;
 }
 
-.titlebar > *:nth-child(n+2), .titlebar > *:nth-child(n+2)
+.titlebar > *:nth-child(n+2)
 {
 	border-left: 2px solid black;
 }
 
-.titlebar > img, .titlebar > img
+.titlebar > img
 {
-    height: 48px;
+    height: 3em;
 	width: auto;
 	flex-grow : 0;
+}
+
+.sub > .titlebar > img
+{
+    height: 2em;
 }
 
 .titlebar > h1, .titlebar > h1
@@ -354,13 +360,57 @@ input[type=checkbox]:checked + .checkbox-label::before
 
 
 
+body > nav
+{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100vw;
+    z-index: 1;
+    background-color: #c0c0c0;
 
+    display: flex;
+    justify-content: center;
 
+    border-bottom: 1px solid black;
+}
 
+body > nav + *
+{
+    margin-top: 6.66em;
+}
+
+section
+{
+    scroll-margin-top: 6.66em;
+}
+
+.nav-link
+{
+    text-align: center;
+}
+
+.nav-link svg
+{
+    width: 2.3em;
+    height: auto;
+}
+
+#welcome-section
+{
+    height: 100vh;
+}
+
+#projects
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
 
 .project-tile
 {
-    width: 40%;
+    width: 47%;
 }
 
 .project-tile > *
