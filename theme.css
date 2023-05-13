@@ -211,7 +211,7 @@ body
     Window aside and content
 */
 
-.infobox > aside, .menubox > aside
+.infobox > aside, .menubox > aside, .infobox > #navbar, .menubox > #navbar
 {
     width: 100%;
     z-index: 1;
@@ -225,7 +225,7 @@ body
 
 @media screen and (min-width: 70em)
 {
-    .infobox > aside, .menubox > aside
+    .infobox > aside, .menubox > aside, .infobox > #navbar, .menubox > #navbar
     {
         width: 30%;
 
