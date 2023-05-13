@@ -5,7 +5,7 @@ body > nav
     top: 0;
     left:0;
     width: 100vw;
-    z-index: 1;
+    z-index: 10;
     background-color: #c0c0c0;
 
     display: flex;
@@ -50,34 +50,36 @@ body > nav + * > section
     right: 5%;
     width: 25em;
     height: auto;
+    max-height: 80vh;
 }
 
 #welcome-section > *:nth-child(3)
 {
     position: absolute;
-    top: 16em;
+    top: calc(50vh - 7.5em);
     left: 5%;
     width: 25em;
-    height: auto;
+    height: 15em;
     font-size: larger;
+    z-index: 2;
 }
 
 #welcome-section > *:nth-child(4)
 {
     position: absolute;
-    bottom: 13.5em;
+    bottom: 10em;
     left: calc(53% - 12.5em);
     width: 25em;
-    height: auto;
+    height: 8em;
 }
 
 #welcome-section > *:nth-child(5)
 {
     position: absolute;
-    bottom: 7.5em;
+    bottom: 4.5em;
     left: calc(50% - 12.5em);
     width: 25em;
-    height: auto;
+    height: 8em;
 }
 
 
