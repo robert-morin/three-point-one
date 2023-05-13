@@ -1,3 +1,7 @@
+/*
+    Quote management
+*/
+
 const codes = [
     {id: 400, name: "Bad Request", description: "The server did not understand the request."},
 
@@ -61,5 +65,68 @@ function setError()
     }
 }
 
-newElement.addEventListener('click', setError);
-setError();
+/*
+    Loading screen
+*/
+
+const loadingScreenId = "loading-screen";
+const progressId = "loading";
+const progressTextId = "loading-text";
+
+let loadingScreenElement = document.getElementById(loadingScreenId);
+let progressElement = document.getElementById(progressId);
+let progressTextElement = document.getElementById(progressTextId);
+
+function generateSteps(min, max)
+{
+    const delay = min + random(max - min);
+    let steps = [];
+
+    for (let i = 0; i < delay; i++)
+    {
+        steps.push(Math.floor(10 + random(60)));
+    }
+    steps.sort();
+
+    return steps;
+}
+
+function setProgress(val)
+{
+    progressElement.setAttribute('value', val);
+    progressTextElement.textContent = "" + val + "%";
+}
+
+function processSteps(steps)
+{
+    if (steps.length === 0)
+    {
+        loadingScreenElement.style.display = "none";
+    }
+    else
+    {
+        const head = steps[0];
+        const tail = steps.slice(1);
+
+        setProgress(head);
+        setTimeout(() => { processSteps(tail); }, 500);
+    } 
+}
+
+function resetPage()
+{
+    setProgress(0);
+    loadingScreenElement.style.display = "block";
+
+    setError();
+
+    const steps = generateSteps(5, 13);
+    setTimeout(() => { processSteps(steps); }, 500);
+}
+
+/*
+    Page setup
+*/
+
+newElement.addEventListener('click', resetPage);
+resetPage();

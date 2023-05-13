@@ -1,0 +1,215 @@
+@import "theme-common.css";
+
+/*
+    Window dressing
+*/
+.infobox, .menubox
+{
+    position: relative;
+    background-color: var(--window-background-color);
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    color: black;
+}
+
+.infobox
+{
+	border: 1px solid var(--window-border-color);
+}
+
+.infobox.active
+{
+	border: 10px solid var(--active-window-border-color);
+    padding: 2px;
+}
+
+.menubox::before
+{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
+    pointer-events: none;
+
+    border: 60px solid;
+    border-image: url("assets/menubox-border.svg") 61;
+}
+
+.sub.menubox::before
+{
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    width: calc(100% - 70px);
+    height: calc(100% - 70px);
+    pointer-events: none;
+
+    border: 42px solid;
+    border-image: url("assets/menubox-border.svg") 61;
+}
+
+.infobox > *:not(header), .menubox > *:not(header)
+{
+    margin: 1em;
+}
+
+.infobox > header, .menubox > header
+{
+    width: 100%;
+}
+
+.fixed > header
+{
+    position: fixed;
+    top: calc(1vh);
+    width: calc(94vw);
+    z-index: 1;
+
+    box-shadow: 0 -20px 0 20px var(--background-color);
+}
+
+@media screen and (min-width: 85em)
+{
+    .fixed > header
+    {
+        left: calc(50vw - 40em - 8px);
+        width: calc(80em);
+    }
+}
+
+.fixed > *:nth-child(2)
+{
+    padding-top: 5em;
+}
+
+.menubox.fixed > header::before
+{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
+
+    border-width: 60px;
+    border-style: solid;
+    border-image: url("assets/menubox-border-top.svg") 61;
+
+    pointer-events: none;
+}
+
+.fullscreen
+{
+    margin: 0 auto 3em;
+    width: 94vw;
+    max-width: 80em;
+}
+
+/*
+    Window Header theming
+*/
+.titlebar
+{
+    width: 100%;
+	display: flex;
+    border-bottom: 2px solid var(--window-border-color);
+    text-align: center;
+
+    background-color: var(--window-background-color);
+    color: var(--text-color);
+}
+
+.active > .titlebar, .active > header > .titlebar
+{
+	background-color: var(--active-window-border-color);
+	color: var(--window-background-color);
+	margin: 0px;
+}
+
+.titlebar > *
+{
+    margin: 0;
+}
+
+.titlebar > *:nth-child(n+2)
+{
+	border-left: 2px solid var(--window-border-color);
+}
+
+.titlebar > img
+{
+    height: 3em;
+	width: auto;
+	flex-grow : 0;
+}
+
+.sub > .titlebar > img
+{
+    height: 2em;
+}
+
+.titlebar > h1, .titlebar > h2, .titlebar > h3, .titlebar > h4, .titlebar > h5, .titlebar > h6
+{
+    flex-grow : 1;
+    font-size: 30px;
+    padding-top: 5px;
+}
+
+.sub > .titlebar > h1, .sub > .titlebar > h2, .sub > .titlebar > h3,
+.sub > .titlebar > h4, .sub > .titlebar > h5, .sub > .titlebar > h6
+{
+    font-size: 20px;
+}
+
+.infobox > header > nav, .menubox > header > nav
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--window-background-color);
+    border-bottom: 2px solid var(--window-border-color);
+}
+
+.infobox > header > nav > *, .menubox > header > nav > *
+{
+    padding: 0.3em 1em;
+}
+
+/*
+    Window aside and content
+*/
+
+.infobox > aside, .menubox > aside, .infobox > #navbar, .menubox > #navbar
+{
+    width: 100%;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.infobox > .content, .menubox > .content
+{
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 70em)
+{
+    .infobox > aside, .menubox > aside, .infobox > #navbar, .menubox > #navbar
+    {
+        width: 30%;
+
+        flex-shrink: 0;
+        align-self: start;
+        position: sticky;
+        top: 0;
+    }
+
+    .infobox .content, .menubox .content
+    {
+        width: calc(65% - 2em);
+    }
+}

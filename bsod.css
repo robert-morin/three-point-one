@@ -72,4 +72,43 @@ li:before {
     left: 0;
     top: 0;
     z-index: 10;
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+#loading-screen .content
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#loading-screen .content > *
+{
+    width: 80%;
+    margin: 2em auto;
+}
+
+#loading-screen > div
+{
+    max-width: 80em;
+    margin: 0 auto 0 auto;
+}
+
+.progress-value
+{
+    position: relative;
+    height: 2.5em;
+}
+
+.progress-value > *
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    text-align: center;
+    line-height: 3em;
+    vertical-align: middle;
 }

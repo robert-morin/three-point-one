@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/*
+    Variables
+*/
+:root
+{
+    --header-height: 50px;
+
+    --background-color: #c0c0c0;
+    --window-background-color: white;
+    --window-border-color: black;
+    --active-window-border-color: #000080;
+    --text-color: black;
+}
+
+.vintage
+{
+    font-family: 'Press Start 2P', sans-serif;
+}

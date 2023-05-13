@@ -3,20 +3,27 @@
   <head>
     <title>Big Super Overkill Devilish page</title>
     <meta content="">
+    <link rel="stylesheet" href="theme-window.css" />
+    <link rel="stylesheet" href="theme-elements.css" />
     <link rel="stylesheet" href="bsod.css" />
     <script src="bsod.js" defer></script>
   </head>
   <body>
     <main>
       <!-- full screen with z-index -->
-      <div id="loading-screen" style="display: none;">
-        <div class="sub menubox project-tile">
+      <div id="loading-screen">
+        <div class="infobox active">
 					<header class="titlebar">
-						<!--img src="./assets/submenu-icon.svg" alt=" "-->
-						<h2 id="title">Big Super Overkill Devilish page</h2>
+						<img src="./assets/submenu-icon.svg" alt=" ">
+						<h2 id="title">Loading</h2>
 					</header>
-          <label for="loading">Loading. Please Wait.</label>
-          <progress id="loading" max="100" value="70"> 70% </progress>
+          <div class="content">
+            <label for="loading">Loading Big Super Overkill Devilish page. Please Wait.</label>
+            <div class="progress-value">
+              <progress id="loading" max="100" value="0"></progress>
+              <div id="loading-text">20 %</div>
+            </div>
+          </div>
 				</div>
       </div>
       <div id="quote-box">
@@ -29,7 +36,7 @@
           <li>Press F5 to try to reload the page.
           </li>
           <li>Press the ASK FOR HELP button to send a request for information about the current error on the internets,
-            or press the TRY AGAIN button to try to load the page again.
+            or press the RELOAD button to try to load the page again.
           </li>
           <li>Press CTRL+ALT+DEL again to restart your computer. You will lose any unsaved information in all applications.
             Overkill for a misbehaving web page.
