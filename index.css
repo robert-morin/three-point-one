@@ -1,3 +1,11 @@
+body
+{
+    display: flex;
+    min-height: 98vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 main
 {
     display: flex;
@@ -15,4 +23,11 @@ main
 {
     width: 8em;
     height: auto;
+}
+
+footer
+{
+    margin: 0 auto;
+    width: 94vw;
+    max-width: 80em;
 }
