@@ -6,25 +6,25 @@ body
 	font-family: 'Press Start 2P', sans-serif;
 }
 
-.window
+.infobox
 {
     position: relative;
     z-index: 10;
 	margin: 1vw 1vw 1vw 1vw;
 }
 
-.window header
+.infobox header
 {
 	display: flex;
 }
 
-.window header > *
+.infobox header > *
 {
 	flex-grow : 1;
 	border-bottom: 2px solid black;
 }
 
-.window header img
+.infobox header img
 {
 	flex-grow : 0;
 	height: 48px;
@@ -32,7 +32,7 @@ body
 }
 
 
-.window.active header
+.infobox.active header
 {
 	background-color: #000080;
 	color: white;
@@ -40,7 +40,7 @@ body
 	margin: 0px;
 }
 
-.window h1
+.infobox h1
 {
 	margin: 5px 0 0 0;
 }
