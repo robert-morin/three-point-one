@@ -20,6 +20,16 @@ p
     margin-bottom: 8px;
 }
 
+#img-div
+{
+    position: relative;
+}
+
+figure
+{
+    margin: 10px 0;
+}
+
 button
 {
     width: 100%;

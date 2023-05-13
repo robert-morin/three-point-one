@@ -4,14 +4,15 @@ General:
 
 About Page:
 
-	about left img
 	working link
+	responsive
+	cleaning
 	understand more z-index (why setting it in button does not work)
 	less px ?
 
-
 Done:
 
+X	about left img
 X	button theming
 X	font
 X	about text formating
