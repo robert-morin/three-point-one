@@ -62,3 +62,14 @@ li:before {
     margin: 25vh auto;
     max-width: 60em;
 }
+
+#loading-screen
+{
+    background-color: #c0c0c0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
