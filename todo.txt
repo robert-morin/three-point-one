@@ -7,9 +7,16 @@ About Page:
 X	about text formating
 X	about left img
 X	working link
-	responsive
+X	responsive
 X	cleaning
 X	less px ?
+X	vertical only version to satisfy FCC
+	remove duplication vertical only / regular
+
+Radio Shack contest:
+
+X	Find 1993 computer in catalog for name/specs + img (https://radioshackcatalogs.com/flipbook/1993_radioshack_catalog.html?fb3d-page=170)
+	...
 
 Theme:
 
