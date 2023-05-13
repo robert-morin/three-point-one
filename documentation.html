@@ -4,64 +4,267 @@
 		<meta charset="utf-8">
 		<title></title>
 		<link rel="stylesheet" href="theme.css" />
+		<link rel="stylesheet" href="documantation.css" />
 	</head>
 	<body>
-		<nav id="navbar">
-			<header>
-				<h1>Documentation!</h1>
-			</header>
-			<ul>
-				<li><a class="nav-link" href="#Section_1">Section 1</a></li>
-				<li><a class="nav-link" href="#Section_2">Section 2</a></li>
-				<li><a class="nav-link" href="#Section_3">Section 3</a></li>
-				<li><a class="nav-link" href="#Section_4">Section 4</a></li>
-				<li><a class="nav-link" href="#Section_5">Section 5</a></li>
-			</ul>
-		</nav>
-		<main id="main-doc">
-			<section id="Section_1" class="main-section">
+		<div class="menubox fullscreen active">
+			<div class="titlebar">
+				<img src="./assets/menu-icon.svg">
+				<h1 id="title">How to Use Help</h1>
+				<img src="./assets/minimize-icon.svg">
+				<img src="./assets/maximize-icon.svg">
+			</div>
+			<nav id="navbar" class="sidebar">
 				<header>
-					<h2>Section 1<h2>
+					<h2>Moving Around in Help<h2>
 				</header>
-				<p>Parag</p>
-				<p>Parag <code>code()</code></p>
-			</section>
-			<section id="Section_2" class="main-section">
-				<header>
-					<h2>Section 2<h2>
-				</header>
-				<p>Parag</p>
-				<p>Parag <code>code()</code></p>
-				<ol>
-					<li>Item 1</li>
-					<li>Item 2</li>
-					<li>Item 3</li>
-					<li>Item 4</li>
-					<li>Item 5</li>
-				</ol>
-			</section>
-			<section id="Section_3" class="main-section">
-				<header>
-					<h2>Section 3<h2>
-				</header>
-				<p>Parag</p>
-				<p>Parag <code>code()</code></p>
-			</section>
-			<section id="Section_4" class="main-section">
-				<header>
-					<h2>Section 4<h2>
-				</header>
-				<p>Parag</p>
-				<p>Parag <code>code()</code></p>
-			</section>
-			<section id="Section_5" class="main-section">
-				<header>
-					<h2>Section 5<h2>
-				</header>
-				<p>Parag</p>
-				<p>Parag <code>code()</code></p>
-			</section>
-		</main>
+				<p>
+					You can use the <code>Help button bar</code> to move around in Help. You can
+					browse through topics, and go back to topics you've viewed
+					previously. You can search for specific information or display
+					Help Contents. You can also choose a <code>jump</code> to go to a new Help
+					topic.
+				</p>
+				<p>
+					For more information about moving around in Help, choose one
+					of the following tasks:
+				</p>
+				<ul>
+					<li><a href="#">Moving Around in Help</a></li>
+					<li><a class="nav-link" href="#Backtracking_Through_Help_Topics">Backtracking Through Help Topics</a></li>
+					<li><a class="nav-link" href="#Browsing_Through_Help_Topics">Browsing Through Help Topics</a></li>
+					<li><a class="nav-link" href="#Choosing_a_Jump">Choosing a Jump</a></li>
+					<li><a class="nav-link" href="#Displaying_Help_Contents">Displaying Help Contents</a></li>
+					<li><a class="nav-link" href="#Returning_to_a_Help_Topic_You_Have_Viewed">Returning to a Help Topic You Have Viewed</a></li>
+					<li><a class="nav-link" href="#Scrolling_Through_a_Help_Topic">Scrolling Through a Help Topic</a></li>
+					<li><a class="nav-link" href="#Searching_for_a_Help_Topic">Searching for a Help Topic</a></li>
+				</ul>
+			</nav>
+			<main id="main-doc">
+				<section id="Backtracking_Through_Help_Topics" class="main-section">
+					<header>
+						<h2>Backtracking Through Help Topics</h2>
+					</header>
+					<p>
+						Use the <code>Back button</code> to go back through the Help <code>topics</code> you have
+						viewed, in the order in which you viewed them. If there is no
+						previous topic to view, the Back button is dimmed. The record of
+						topics you have viewed is removed each time you quit Help.
+					</p>
+					<h3>To backtrack through Help topics</h3>
+					<ul>
+						<li>
+							Choose the Back button on the <code>Help button bar</code>.<br/>
+							Or type <b>b</b>.
+						</li>
+					</ul>
+					<p>
+						You return to the previously viewed topic. The topic appears as
+						you left it, unless you resized the window before backtracking.
+					</p>
+					<p>See Also<br/><a href="#">Moving Around in Help</a></p>
+				</section>
+				<section id="Browsing_Through_Help_Topics" class="main-section">
+					<header>
+						<h2>Browsing Through Help Topics</h2>
+					</header>
+					<p>
+						If the browse buttons (<b><<</b> and <b>>></b>) appear in the Help window, it
+						means certain Help <code>topics</code> have been grouped tagether in a
+						sequence.
+					</p>
+					<h3>To view the next topic in the browse sequence</h3>
+					<ul>
+						<li>
+							Choose the <code>>> button</code> on the <code>Help button bar</code>.<br/>
+							Or press the period (.) key.
+						</li>
+					</ul>
+					<p>
+						When you reach the last topic in the sequence, or if there is no
+						browse sequence, the <b>>></b> button is dimmed.
+					</p>
+					<h3>To view the previous topic in the browse sequence</h3>
+					<ul>
+						<li>
+							Choose the <code><b><<</b> button</code> on the Help button bar.<br/>
+							Or press the comma (,) key.
+						</li>
+					</ul>
+					<p>
+						When you reach the first topic in the sequence, or if there is no
+						browse sequence, the <b><<</b> button is dimmed.
+					</p>
+					<p>See Also<br/><a href="#">Moving Around in Help</a></p>
+				</section>
+				<section id="Choosing_a_Jump" class="main-section">
+					<header>
+					<h2>Choosing a Jump</h2>
+					</header>
+					<p>
+						Help topics can include graphics and text that link to other Help
+						topics or to more information about the current topic. These are
+						called jumps.
+					</p>
+					<p>
+						Jumps are usually identified by a color and an underline
+						(unless the jump is a graphic). When you point to a jump, the
+						<code>pointer</code> changes to hand shape.
+					</p>
+					<h3>To choose a jump</h3>
+					<ul>
+						<li>
+							Point to the text or graphic, and click with the mouse button.<br/>
+							Or press TAB to select the jump, and then press ENTER.<br/>
+							You can press SHIFT+TAB to move backward and select a jump.
+						</li>
+					</ul>
+					<p>
+						If the jump you choose is linked to another topic, that topic
+						appears in the Help window. Sometimes a jump is linked to
+						information that appears in a pop-up window or a secondary
+						window.
+					</p>
+					<p>
+						Note: When information is displayed in a pop-up window, the
+						size of the pop-up window is proportional to the size of
+						the main Help window. If you want the pop-up window to
+						be larger, you need to change the size of the main Help
+						window.
+					</p>
+					<h3>To display all jumps in a topic</h3>
+					<ul>
+						<li>Press CTRL+TAB.</li>
+					</ul>
+					<h3>To close a pop-up window</h3>
+					<ul>
+						<li>Click anywhere on the screen. or press any key.</li>
+					</ul>
+					<h3>To close a secondary window</h3>
+					<ul>
+						<li>
+							Double-click the Contro-menu box.<br/>
+							Or press ALT, SPACEBAR to open the Control menu, and then choose Close.
+						</li>
+					</ul>
+					<p>See Also<br/><a href="#">Moving Around in Help</a></p>
+				</section>
+				<section id="Displaying_Help_Contents" class="main-section">
+					<header>
+						<h2>Displaying Help Contents</h2>
+					</header>
+					<p>
+						Help Contents generally lists available Help <code>topics</code>. If you are
+						Viewing a Help topic and you want to return to Help Contents, use
+						the Contents button.
+					</p>
+					<h3>To display Help Contents from within Help</h3>
+					<ul>
+						<li>
+							Choose the <code>Contents button</code> in the <code>Help button bar</code>.<br/>
+							Or type <b>c</b>.
+						</li>
+					</ul>
+					<p>
+						See Also<br/>
+						<a href="">Getting Help from Your Application</a><br/>
+						<a href="#">Moving Around in Help</a>
+					</p>
+				</section>
+				<section id="Returning_to_a_Help_Topic_You_Have_Viewed" class="main-section">
+					<header>
+						<h2>Returning to a Help Topic You Have Viewed</h2>
+					</header>
+					<p>
+						You can use the <code>History button</code> to see a list of the previous 40
+						Help topics you have viewed. To return to a topic, choose it from
+						this list.
+					</p>
+					<h3>To use the History button to return to a topic</h3>
+					<ol>
+						<li>
+							In the <code>Help button bar</code>, choose the History button.<br/>
+							Or type t.
+						</li>
+						<li>
+							Double-click the topic you want to return to (or select it and press ENTER).<br/>
+							If necessary. use the <code>scroll bar</code> to see more topics.<br/>
+							The History window stays open until you close it or quit Help.
+						</li>
+					</ol>
+					<h3>To close the History window</h3>
+					<ul>
+						<li>
+							Double-click the <code>Control-menu box</code>.<br/>
+							Or press ALT+F4.
+						</li>
+					</ul>
+					<p>See Also<br/><a href="#">Moving Around in Help</a></p>
+				</section>
+				<section id="Scrolling_Through_a_Help_Topic" class="main-section">
+					<header>
+						<h2>Scrolling Through a Help Topic</h2>
+					</header>
+					<p>
+						If the information in a Help topic doesn't fit in the window. use the <code>scroll bar</code>.
+					</p>
+					<h3>To scroll through a Help topic</h3>
+					<ul>
+						<li>
+							Click one of the scroll arrows to scroll one line at a time,
+							or drag the scroll box to scroll quickly through a topic.<br/>
+							Or use the arrow keys to scroll up or down.
+						</li>
+					</ul>
+					<h3>To scroll up or down, one window at a time</h3>
+					<ul>
+						<li>
+							Click above or below the scroll box in the scroll bar.<br/>
+							Or use the PAGE UP and PAGE DOWN keys.
+						</li>
+					</ul>
+					<p>See Also<br/><a href="#">Moving Around in Help</a></p>
+				</section>
+				<section id="Searching_for_a_Help_Topic" class="main-section">
+					<header>
+						<h2>Searching for a Help Topic</h2>
+					</header>
+					<p>
+						You can find information quickly by using the <code>Search button</code> in
+						the Help window. The Search button opens the Search dialog box,
+						where you select a word that you want to search for. All Help
+						topics associated with that word are listed, and you can select
+						one to view. For example, to find out how to save a file, you
+						could select "save" from the list. Topics that have the word
+						"save" associated with them would then be listed in the Search
+						dialog box.
+					</p>
+					<h3>To search for Help information</h3>
+					<ol>
+						<li>
+							In the <code>Help button bar</code>, choose the Search button.<br/>
+							Or type <b>s</b>.
+						</li>
+						<li>
+							Select the word or phrase you want to search for. When you
+							start typing, the words that most closely match the text you
+							type are displayed.
+						</li>
+						<li>
+							Choose the Show Topics button.
+						</li>
+						<li>
+							Select the topic you want to view. If necessary, use the
+							scroll bar to see more topics.
+						</li>
+						<li>
+							Choose the Go To button.
+						</li>
+					</ol>
+					<p>See Also<br/><a href="#">Moving Around in Help</a></p>
+				</section>
+			</main>
+		</div>
 	</body>
 	<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>

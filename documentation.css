@@ -1,0 +1,15 @@
+a, code
+{
+    color: #00a857;
+}
+
+a:active
+{
+    color: darkolivegreen;
+}
+
+code
+{
+    font-size: 1.25em;
+    text-decoration: underline dashed #00a857;
+}
