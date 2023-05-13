@@ -13,7 +13,7 @@
 
 .half
 {
-    flex: 1 1 20em;
+    flex: 1 1 30em;
 }
 
 .full
@@ -31,11 +31,6 @@
     flex: 1 1;
 }
 
-.half-child > *
-{
-    flex: 1 1 35em;
-}
-
 .sidekick > img, .sidekick > .kick
 {
     width: 60%;
@@ -43,8 +38,18 @@
     display: block;
 }
 
-@media (min-width: 45em)
+.sidekick > .side
 {
+    text-align: justify;
+}
+
+@media (min-width: 50em)
+{
+    .fullscreen > main
+    {
+        margin: 3em;
+    }
+
     .sidekick > img, .sidekick > .kick
     {
         display: inline-block;
@@ -56,11 +61,15 @@
     {
         display: inline-block;
         width: calc(100% - 18em);
-        text-align: justify;
     }
 }
 
 main > *:nth-child(n + 2)
 {
     margin-top: 1em;;
+}
+
+.fullscreen
+{
+    min-width: 35em;
 }
